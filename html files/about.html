@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Animate CSS Library -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Commit: AOS (Animate On Scroll) for scroll animations -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+ <!-- Google font -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+   rel="stylesheet">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Commit: AOS (Animate On Scroll) for scroll animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS (Alpha Version 5.3.0) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS (Version 5.2.3) with integrity check -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+    <!-- Google Font: Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon for the Blog -->
+    <link rel="shortcut icon" href="../Green Wellness Flat Illustrative Health and Fitness Platform Logo.png"
+        type="image/x-icon">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Custom CSS for About Us page -->
+    <link rel="stylesheet" href="../css/about.css">
+
+    <title> Digital Wellness Retreat</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../Green Wellness Flat Illustrative Health and Fitness Platform Logo.png"
+                    style="height: 60px;width: 140px; object-fit: cover;object-position: center;" class="" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase active text-dark" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase text-dark" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase text-dark"
+                            href="../html files/programm.html">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase text-dark" href="../html files/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase text-dark"
+                            href="../html files/reservation.html">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase text-dark"
+                            href="../html files/schedule.html">Schedules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase text-dark" href="../html files/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" id="auth-link">
+                        <a class="nav-link text-dark" href="./loginsignup.html">
+                            <!-- <i class="fa fa-sign-in" aria-hidden="true"></i> -->
+                            <span class="text-dark">Register/Sign In</span>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none" id="logout-link">
+                        <a class="nav-link text-dark" href="#">
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                            <span id="logout" class="text-dark">Sign Out</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">
+                            <i class="fa-solid fa-user" aria-hidden="true"></i>
+                            <span id="username-nav"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <section class="video-section">
+        <video autoplay muted loop id="bg-video">
+            <source src="../video/8781623-uhd_4096_2160_25fps.mp4" type="video/mp4">
+        </video>
+
+    </section>
+
+
+
+    <!-- Our History Section -->
+    <section class="our-history mt-5 py-5 mb-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="history-image">
+                        <img src="../img/retreat.webp" class="img-fluid" alt="History Image">
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up">
+                    <h2>Our History</h2>
+                    <p class="lead">Founded in 2020, the Digital Wellness Retreat began as a small initiative to help
+                        individuals manage their digital lives more effectively. Recognizing the increasing impact of
+                        technology on mental health, our founders, Jane and John Doe, envisioned a place where people
+                        could find balance in a tech-saturated world. Starting with a few online mindfulness classes,
+                        the retreat quickly grew into a comprehensive wellness platform, offering a variety of programs
+                        designed to enhance overall well-being.</p>
+                    <div class="achievement">
+                        <div class="icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Achievement Title</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet aliquam magna.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Story Section -->
+    <section class="our-story bg-light mb-5 mt-3" data-aos="fade-left">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Our Story</h2>
+                    <p class="lead">Our journey began with a simple question: How can we leverage technology to improve
+                        our lives instead of letting it control us?</p>
+                    <ul class="points list-unstyled">
+                        <li><i class="fas fa-seedling"></i> The Digital Wellness Retreat was born from this question.
+                        </li>
+                        <li><i class="fas fa-users"></i> Our team includes wellness experts,and mental health
+                            professionals.</li>
+                        <li><i class="fas fa-heart"></i> We create programs to help people disconnect from devices.</li>
+                        <li><i class="fas fa-globe"></i> we've touched thousands of lives,support for healthy digital
+                            navigation.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="story-image">
+                        <img src="../img/images.jpg" class="img-fluid" alt="Story Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Start -->
+    <div class="service">
+        <div class="container">
+            <div class="section-header text-center wow zoomIn mb-5" data-aos="fade-up">
+
+                <h1>Retreats For Health</h1>
+                <br>
+            </div>
+            <div class="row" data-aos="fade-up">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-dumbbell"></i>
+                        </div>
+                        <h3>Heal emotions</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit
+                            non
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="service-item active">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-notes-medical"></i>
+                        </div>
+                        <h3>Body Refreshes</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit
+                            non
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-peace"></i>
+                        </div>
+                        <h3>Mind & Serenity</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit
+                            non
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa-regular fa-face-laugh-beam"></i>
+                        </div>
+                        <h3>Enjoy Your life</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit
+                            non
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <h3>Body & Spirituality</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit
+                            non
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-disease"></i>
+                        </div>
+                        <h3>Body & Mind</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit
+                            non
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- -----------------------------------------------Team-card-Start--------------------------------------------------------------->
+    <div class="teams">
+        <div class="container">
+
+            <div class="section-header text-center" data-aos="fade-up">
+
+                <h1>Meet Our Team</h1>
+                <br>
+            </div>
+            <div class="teams-card" data-aos="fade-up">
+                <div class="team">
+                    <div class="team-picture">
+                        <img src="../img/4.png" alt="">
+                    </div>
+                    <div class="team-desc">
+                        <div class="desc-name">
+                            <h2>Zainab Rashid</h2>
+                            <h3>JavaScript Expert</h3>
+                        </div>
+                        <div class="desc-main">
+                            <p>Code maestro with a passion forjavascript. Ensures websites are seamless and
+                                user-friendly.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team">
+                    <div class="team-picture">
+                        <img src="../img/3.png" alt="">
+                    </div>
+                    <div class="team-desc">
+                        <div class="desc-name">
+                            <h2>Aqsa Iqbal</h2>
+                            <h3>UI/UX Designer</h3>
+                        </div>
+                        <div class="desc-main">
+                            <p>Crafts elegant interfaces, balancing aesthetics and functionality. Creativity brings life
+                                to user
+                                experiences.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team">
+                    <div class="team-picture">
+                        <img src="../img/2.png" alt="">
+                    </div>
+                    <div class="team-desc">
+                        <div class="desc-name">
+                            <h2>Sana</h2>
+                            <h3>Web Designer</h3>
+
+                        </div>
+                        <div class="desc-main">
+                            <p>Pixel-perfect designs redefine user interaction. Eye for detail enhances the visual
+                                appeal of projects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mission and Vision -->
+    <section class="mission-vision py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-up">Mission and Vision</h2>
+            <div class="row justify-content-center" data-aos="fade-up">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="butterfly-ribbon"></div>
+                        <div class="card-body text-center">
+                            <h3>Our Mission</h3>
+                            <p class="lead">To empower individuals to achieve digital well-being through mindfulness and
+                                technology awareness.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="butterfly-ribbon"></div>
+                        <div class="card-body text-center">
+                            <h3>Our Vision</h3>
+                            <p class="lead">A world where technology enhances human well-being without compromising
+                                mental health and personal connection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Start -->
+    <!-- Testimonial Start -->
+    <div class="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center" data-aos="fade-up">
+                        <h2>Our Clients Say!</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="testimonial-slider" data-aos="fade-up">
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="../img/testimonial-1.jpg" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis
+                                suscip justo dictum.</p>
+                            <h3>Customer Name</h3>
+                            <h4>Profession</h4>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="../img/testimonial-2.jpg" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis
+                                suscip justo dictum.</p>
+                            <h3>Customer Name</h3>
+                            <h4>Profession</h4>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="../img/testimonial-3.jpg" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis
+                                suscip justo dictum.</p>
+                            <h3>Customer Name</h3>
+                            <h4>Profession</h4>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="../img/testimonial-4.jpg" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis
+                                suscip justo dictum.</p>
+                            <h3>Customer Name</h3>
+                            <h4>Profession</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links -->
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <img src="../Green Wellness Flat Illustrative Health and Fitness Platform Logo.png"
+                            style="height: 50px;width: 130px; object-fit: cover;object-position: center;" class=""
+                            alt="">
+                        <p>
+                            Experience the ultimate rejuvenation with our diverse wellness programs tailored for
+                            everyone.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4" style="font-weight: bold;">
+                            Programs
+                        </h6>
+                        <p class="hover-color">
+                            <a href="../html files/programm.html" class="text-reset text-decoration-none">Mindfulness
+                                Meditation</a>
+                        </p>
+                        <p class="hover-color">
+                            <a href="../html files/programm.html" class="text-reset text-decoration-none">Digital
+                                Detox</a>
+                        </p>
+                        <p class="hover-color">
+                            <a href="../html files/programm.html" class="text-reset text-decoration-none">Yoga
+                                Wellness</a>
+                        </p>
+                        <p class="hover-color">
+                            <a href="../html files/programm.html" class="text-reset text-decoration-none">Nature
+                                Immersion</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4" style="font-weight: bold;">
+                            Useful links
+                        </h6>
+                        <p class="hover-color">
+                            <a href="../html files/loginsignup.html"
+                                class="text-reset text-decoration-none">Reservation</a>
+                        </p>
+                        <p class="hover-color">
+                            <a href="../html files/schedule.html" class="text-reset text-decoration-none">Schedule</a>
+                        </p>
+                        <p class="hover-color">
+                            <a href="../html files/blog.html" class="text-reset text-decoration-none">Blog</a>
+                        </p>
+                        <p class="hover-color">
+                            <a href="../html files/contact.html" class="text-reset text-decoration-none">Contact</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4" style="font-weight: bold;">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            <a href="mailto:info@digitalwellnessretreat.com"
+                                class="text-reset text-decoration-none">info@digitalwellnessretreat.com</a>
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links -->
+
+        <!-- Copyright -->
+        <div class="text-center p-1" style="background-color: #0d6e41; color: white;">
+            © 2024 Copyright:
+            <a class="text-reset text-decoration-none fw-bold" href="https://digitalwellnessretreat.com/"
+                target="_blank">Digital Wellness Retreat</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+    <a href="#" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></span>
+    </a>
+
+    <!-- Scripts -->
+    <!-- Commit: AOS JavaScript for initializing scroll animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+
+    <!-- jQuery (Slim Version) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <!-- Popper.js for Bootstrap tooltips and popovers -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+
+    <!-- jQuery (Full Version) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Bootstrap JS (Version 5.3.0) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap JS (Alpha Version 5.3.0) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Slick Carousel JS -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.testimonial-slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: true,
+                dots: true,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <!-------------------------- Blocking Page ------------------------------>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const authLink = document.getElementById('auth-link');
+            const logoutLink = document.getElementById('logout-link');
+            const usernameNav = document.getElementById('username-nav');
+
+            // Check if the user is logged in
+            if (localStorage.getItem('loggedIn') === 'true') {
+                authLink.classList.add('d-none'); // Hide Register/SignIn
+                logoutLink.classList.remove('d-none'); // Show Logout
+
+                const user = JSON.parse(localStorage.getItem('user'));
+                if (user && user.name) {
+                    usernameNav.innerText = user.name; // Display user's name in the navbar
+                }
+            } else {
+                authLink.classList.remove('d-none'); // Show Register/SignIn
+                logoutLink.classList.add('d-none'); // Hide Logout
+                usernameNav.innerText = ''; // Clear username display
+
+                // Optional: Only redirect from specific pages if needed
+                // Uncomment the line below if you want to redirect only from restricted pages
+                // if (window.location.pathname === '/restricted-page.html') {
+                //     window.location.href = './loginsignup.html';
+                // }
+            }
+
+            // Logout functionality
+            document.getElementById('logout').addEventListener('click', function () {
+                localStorage.removeItem('loggedIn');
+                localStorage.removeItem('user');
+                // Redirect to the home page or login page after logout
+                window.location.href = './about.html'; // Change this to your home page
+            });
+        });
+
+        const updateNavbar = () => {
+            const loggedIn = localStorage.getItem('loggedIn');
+            const username = localStorage.getItem('username');
+
+            const usernameNav = document.getElementById('username-nav');
+            if (loggedIn === 'true' && usernameNav) {
+                usernameNav.innerText = `${username}`;
+            } else if (usernameNav) {
+                usernameNav.innerText = ``;
+            }
+        }
+
+        updateNavbar();
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+
+}
+
+/* Navbar Styles */
+.navbar {
+  /* background: linear-gradient(135deg, #d2f7e4, #0e5f22); Light gradient background */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Soft shadow */
+  background: linear-gradient(135deg, #ebecec, #e1e3e2);
+
+  font-weight: 700;
+  /* font-family: "Platypi", serif; */
+  transition: all 0.3s ease-in-out;
+  /* Smooth transition for hover effects */
+}
+
+
+.nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Noto Serif", serif;
+  color: #b6a3a3;
+  /* Default link color */
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  /* Transition for hover effects */
+}
+
+.nav-link:hover {
+  color: #0d6e41 !important;
+  /* Hover color */
+  transform: translateY(-2px);
+  /* Slight lift on hover */
+}
+
+.navbar-brand img {
+  height: 80px;
+  width: fit-content;
+  transition: transform 0.2s ease-in-out;
+  /* Smooth transition for logo hover */
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.05);
+  /* Slightly enlarge logo on hover */
+}
+
+.hover-color a:hover {
+  color: #0d6e41 !important;
+  /* Same hover color for any links inside hover-color class */
+}
+
+
+.video-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+h1:hover {
+  color: #124e20;
+}
+
+
+/* Custom Styles */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap'); */
+
+
+
+.card{
+  margin: 10px;
+}
+.card img {
+  height: 200px;
+  width: 100%;
+  /* margin: 10px; */
+
+}
+
+.card-body {
+  /* border-color: rgb(9, 139, 57); */
+  background-color: rgb(68, 150, 98);
+  
+  /* border-radius: 12px; */
+}
+.card-body h5{
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#filter-buttons button {
+  
+  border-radius: 12px;
+  border-color: rgb(9, 139, 57);
+  background-color: rgb(247, 250, 247);
+
+}
+
+#filter-buttons button:hover {
+  background-color: #0d6e41;
+  color: white;
+}
+
+#filter-buttons button.active {
+  color: #fff;
+  background: #0d6e41;
+}
+
+#filterable-cards .card {
+  border: 2px solid transparent;
+}
+
+#filterable-cards .card.hide {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  #filterable-cards {
+    justify-content: center;
+  }
+
+  #filterable-cards .card {
+    width: calc(100% / 2 - 10px);
+  }
+}
+
+body {
+  --sb-track-color: #eaeaea;
+  --sb-thumb-color: #0d6e41;
+  --sb-size: 10px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 6px;
+
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 1.5px;
+  right: 0.4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0a3e25;
+  border-radius: 0.5rem;
+  padding: 8px;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+}
+
+.back-to-top i {
+  color: #f6eded;
+  font-size: 15px;
+  transition: 0.2s ease-out;
+}
+
+.back-to-top:hover {
+  background-color: #124e20;
+}
+
+.back-to-top:hover span {
+  transform: translateY(-4px);
+}

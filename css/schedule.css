@@ -1,0 +1,173 @@
+body {
+  /* font-family: 'Arial', sans-serif; */
+  margin: 0;
+  padding: 0;
+  /* background-color: #f4f4f9; */
+  /* color: #333; */
+}
+
+/* Navbar Styles */
+.navbar {
+  /* background: linear-gradient(135deg, #d2f7e4, #0e5f22); Light gradient background */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Soft shadow */
+  background: linear-gradient(135deg, #ebecec, #e1e3e2);
+
+  font-weight: 700;
+  /* font-family: "Platypi", serif; */
+  transition: all 0.3s ease-in-out;
+  /* Smooth transition for hover effects */
+}
+
+
+.nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Noto Serif", serif;
+  color: #b6a3a3;
+  /* Default link color */
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  /* Transition for hover effects */
+}
+.nav-link:hover {
+  color: #0d6e41 !important; /* Hover color */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.navbar-brand img {
+  height: 80px;
+  width: fit-content;
+  transition: transform 0.2s ease-in-out; /* Smooth transition for logo hover */
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.05); /* Slightly enlarge logo on hover */
+}
+
+.hover-color a:hover {
+  color: #0d6e41 !important; /* Same hover color for any links inside hover-color class */
+}
+
+h1:hover{
+  color: #124e20;
+}
+.video-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h3{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "Platypi", serif;
+  font-style: italic;
+}
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+  h1 {
+    color: #07090b;
+    font-family: "Platypi", serif;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .tab-content > .tab-pane {
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-top: none;
+    background-color: #fff;
+  }
+  thead{
+    background-color: #228238;
+    color: white;
+  }
+  .table {
+    margin-top: 20px;
+    
+  }
+  .custom-active {
+    background-color: rgb(24, 104, 24); /* Set the background color to green */
+    color: white; /* Set the text color to white for better contrast */
+    border-color: green; /* Optional: set border color to match background */
+}
+
+  /* schedual.css */
+.list-group-item.active {
+  background-color: #228238;
+  color: #f4f5f7;
+  /* border-color: 1px solid gainsboro; */
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  
+}
+
+body {
+  --sb-track-color: #eaeaea;
+  --sb-thumb-color: #0d6e41;
+  --sb-size: 10px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 6px;
+  
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+.back-to-top {
+	position: fixed;
+	bottom: 1.5px;
+	right: 0.4rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #0a3e25;
+	border-radius: 0.5rem;
+	padding: 8px;
+	text-decoration: none;
+	transition: 0.2s ease-out;
+}
+
+.back-to-top i {
+	color: #f6eded;
+	font-size: 15px;
+	transition: 0.2s ease-out;
+}
+
+.back-to-top:hover {
+	background-color: #124e20;
+}
+.back-to-top:hover span {
+	transform: translateY(-4px);
+}

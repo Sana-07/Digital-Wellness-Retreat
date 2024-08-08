@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap 4.5.2 CSS (Responsive design framework) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Bootstrap CSS (Alpha version 2 for responsive design framework) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS (Alpha version 1, potentially duplicate of the previous Bootstrap link) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS Library (Animate On Scroll for scroll animations) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+
+    <!-- FontAwesome CSS for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+   
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+    <!-- Favicon for the Blog -->
+    <link rel="shortcut icon" href="../Green Wellness Flat Illustrative Health and Fitness Platform Logo.png"
+        type="image/x-icon">
+
+    <!-- AOS (Animate On Scroll) Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <!-- Custom styles for the gallery page -->
+    <link rel="stylesheet" href="../css/gallery.css">
+
+
+    <!-- Font Awesome CSS (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title> Digital Wellness Retreat</title>
+
+    <style>
+        /* AOS Animation */
+        [data-aos="fade-up"] {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        [data-aos="fade-up"].aos-animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../Green Wellness Flat Illustrative Health and Fitness Platform Logo.png"
+                    style="height: 60px;width: 140px; object-fit: cover;object-position: center;" class="" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase active text-dark" href="../index.html"
+                            target="_blank">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase text-dark" href="../html files/about.html"
+                            target="_blank">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase text-dark" href="../html files/programm.html"
+                            target="_blank">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase text-dark" href="../html files/blog.html"
+                            target="_blank">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase text-dark"
+                            href="../html files/reservation.html">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase text-dark" href="../html files/schedule.html"
+                            target="_blank">Schedules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase text-dark" href="../html files/contact.html"
+                            target="_blank">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" id="auth-link">
+                        <a class="nav-link text-dark" href="./loginsignup.html">
+                            <!-- <i class="fa fa-sign-in" aria-hidden="true"></i> -->
+                            <span class="text-dark">Register/Sign In</span>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none" id="logout-link">
+                        <a class="nav-link text-dark" href="#">
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                            <span id="logout" class="text-dark">Sign Out</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">
+                            <i class="fa-solid fa-user" aria-hidden="true"></i>
+                            <span id="username-nav"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <section class="video-section">
+        <video autoplay muted loop id="bg-video">
+            <source src="../video/5092620-hd_1920_1080_24fps.mp4" type="video/mp4">
+        </video>
+
+    </section>
+
+
+    <div class="container-fluid" data-aos="fade-up">
+
+        <h1 class="text-center mb-5 mt-5 head" data-aos="fade-up" style=" font-family:Platypi, serif;
+        font-style: italic;
+        ">Captured Wellness Experiences</h1>
+
+        <!-- Images Filter Buttons Section -->
+        <div class="row mt-5" id="filter-buttons" data-aos="fade-up" style=" font-family:Platypi, serif;
+        font-style: italic;">
+            <div class="col-12 d-flex flex-wrap justify-content-center" style=" font-family:Platypi, serif;
+        font-style: italic;">
+                <button class="btn mb-2 me-1 active" data-filter="all">Show all</button>
+                <button class="btn mb-2 mx-1" data-filter="meditation">Meditation</button>
+                <button class="btn mb-2 mx-1" data-filter="Digital Detox Retreat">Digital Detox Retreat</button>
+                <button class="btn mb-2 mx-1" data-filter="Holistic Wellness">Holistic Wellness</button>
+                <button class="btn mb-2 mx-1" data-filter="Stress Relief Retreat">Stress Relief Retreat</button>
+                <button class="btn mb-2 mx-1" data-filter="Personal Growth">Personal Growth</button>
+                <button class="btn mb-2 mx-1" data-filter="Yoga Wellness">Yoga Wellness</button>
+                <button class="btn mb-2 mx-1" data-filter="Creative Expression">Creative Expression</button>
+                <button class="btn mb-2 mx-1" data-filter="Silent Retreat">Silent Retreat</button>
+                <button class="btn mb-2 mx-1" data-filter="Wellness for Seniors">Wellness for Seniors</button>
+                <button class="btn mb-2 mx-1" data-filter="Women Empowerment">Women Empowerment</button>
+                <button class="btn mb-2 mx-1" data-filter="Men's Wellness">Men's Wellness</button>
+                <button class="btn mb-2 mx-1" data-filter="Detox and Cleanse">Detox and Cleanse</button>
+                <button class="btn mb-2 mx-1" data-filter="Nature Immersion">Nature Immersion</button>
+                <button class="btn mb-2 mx-1" data-filter="Digital Wellness Workshop">Digital Wellness Workshop</button>
+                <button class="btn mb-2 mx-1" data-filter="Wellness for Parents">Wellness for Parents</button>
+            </div>
+        </div>
+        <!-- Filterable Images / Cards Section -->
+        <div class="row px-2 mt-4" id="filterable-cards" data-aos="fade-up">
+            <!-- Meditation Retreat Cards -->
+            <div class="col-md-3">
+                <div class="card p-0" data-name="meditation">
+                    <img src="https://avatars.mds.yandex.net/i?id=8e785baa89c95a387b67b8a842a35338a35b9b75-12427807-images-thumbs&n=13"
+                        class="card-img-top" alt="Meditation">
+                    <div class="card-body">
+                        <h5 class="card-title">Mindfulness Meditation</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="meditation">
+                    <img src="https://avatars.mds.yandex.net/i?id=ae37afa619c553dcfe80345e5c39712c14052203-7547952-images-thumbs&n=13"
+                        class="card-img-top" alt="Meditation">
+                    <div class="card-body">
+                        <h5 class="card-title">Breath Meditation</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="meditation">
+                    <img src="https://avatars.mds.yandex.net/i?id=aeeae9d0a147ec3cfb0d79dd085b2161158a285e7471c30b-12537873-images-thumbs&n=13"
+                        class="card-img-top" alt="Meditation">
+                    <div class="card-body">
+                        <h5 class="card-title">Loving-Kindness </h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="meditation">
+                    <img src="https://avatars.mds.yandex.net/i?id=a241676198b2dd191c72a1067696c9e898782007-8931611-images-thumbs&ref=rim&n=33&w=450&h=300"
+                        class="card-img-top" alt="Meditation">
+                    <div class="card-body">
+                        <h5 class="card-title">Transcendental Meditation</h5>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Yoga Retreat Cards -->
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Yoga Wellness">
+                    <img src="https://avatars.mds.yandex.net/i?id=719c8df7fdaec2186922a4b7bf12270f7073bb37-8199312-images-thumbs&n=13"
+                        class="card-img-top" alt="Yoga">
+                    <div class="card-body">
+                        <h5 class="card-title"> Awakening the Spirit</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Yoga Wellness">
+                    <img src="https://avatars.mds.yandex.net/i?id=d97001351a906569470080efc59363a67c523220baf139fe-13318493-images-thumbs&n=13"
+                        class="card-img-top" alt="Yoga">
+                    <div class="card-body">
+                        <h5 class="card-title">Nature & Nurture Yoga </h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Yoga Wellness">
+                    <img src="https://avatars.mds.yandex.net/i?id=9a722918249ffb24b6356d521dd96de1c59376a0ecfd85dc-12716743-images-thumbs&n=13"
+                        class="card-img-top" alt="Yoga">
+                    <div class="card-body">
+                        <h5 class="card-title"> Yoga by the Sea</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Yoga Wellness">
+                    <img src="https://avatars.mds.yandex.net/i?id=012fc673379ca14254418e0fc8edcd14daf73977aa33d174-10240716-images-thumbs&n=13"
+                        class="card-img-top" alt="Yoga">
+                    <div class="card-body">
+                        <h5 class="card-title">Serene Soul Retreat </h5>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- digital detox Cards -->
+            <div class="col-md-3">
+                <div class="card p-0" data-name="  Digital Detox Retreat">
+                    <img src="https://d3vcx48nm7yym2.cloudfront.net/?source=aHR0cHM6Ly9zZWN1cmUucmV0cmVhdC5ndXJ1L3dwLWNvbnRlbnQvdXBsb2Fkcy9zaXRlcy82MDM0LzIwMjQvMDQvMjAyMzA5MDFfMTIwODQ4LTEwMjR4NTc2LmpwZw%3D%3D&width=1024&height=768&resize=inside"
+                        class="card-img-top" alt="Nature">
+                    <div class="card-body">
+                        <h5 class="card-title"> Mountain Serenity Detox</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Digital Detox Retreat">
+                    <img src="https://d3vcx48nm7yym2.cloudfront.net/?source=aHR0cHM6Ly9zZWN1cmUucmV0cmVhdC5ndXJ1L3dwLWNvbnRlbnQvdXBsb2Fkcy9zaXRlcy82MDM0LzIwMjQvMDQvMDAzLmpwZw%3D%3D&width=1024&height=768&resize=inside"
+                        class="card-img-top" alt="Nature">
+                    <div class="card-body">
+                        <h5 class="card-title">Peaceful Oasis Retreat</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="  Digital Detox Retreat">
+                    <img src="https://d3vcx48nm7yym2.cloudfront.net/?source=aHR0cHM6Ly9zZWN1cmUucmV0cmVhdC5ndXJ1L3dwLWNvbnRlbnQvdXBsb2Fkcy9zaXRlcy82MTAyLzIwMjQvMDUvcGF2aWxsaW9uLnBuZw%3D%3D&width=1024&height=768&resize=inside"
+                        class="card-img-top" alt="Nature">
+                    <div class="card-body">
+                        <h5 class="card-title"> Forest Calm Retreat</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name=" Digital Detox Retreat">
+                    <img src="https://d3vcx48nm7yym2.cloudfront.net/?source=aHR0cHM6Ly9zZWN1cmUucmV0cmVhdC5ndXJ1L3dwLWNvbnRlbnQvdXBsb2Fkcy9zaXRlcy82MDM0LzIwMjQvMDQvSU1HXzUzNDEtMTAyNHg3NjguanBn&width=1024&height=768&resize=inside"
+                        class="card-img-top" alt="Nature">
+                    <div class="card-body">
+                        <h5 class="card-title"> Refreshing Nature Retreat</h5>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Holistic Retreat Cards -->
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Holistic Wellness">
+                    <img src="https://cdn.prod.website-files.com/5bfd5ccdddc00c144ef694a4/5d1cd6f22b2ad27307490cbf_MENTAL%20HEALTH.jpg"
+                        class="card-img-top" alt="Holistic">
+                    <div class="card-body">
+                        <h5 class="card-title"> Nourish Your Soul Retreat</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Holistic Wellness">
+                    <img src="https://cdn.prod.website-files.com/5bfd5ccdddc00c144ef694a4/5d1cd6bd4cf9cb39ef5dab0b_STRESS.jpg"
+                        class="card-img-top" alt="Holistic">
+                    <div class="card-body">
+                        <h5 class="card-title">Empowerment and Wellness</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Holistic Wellness">
+                    <img src="https://cdn.prod.website-files.com/5bfd5ccdddc00c144ef694a4/5d1cd65d4cf9cb831b5d9b6c_SMOKING.jpg"
+                        class="card-img-top" alt="Holistic">
+                    <div class="card-body">
+                        <h5 class="card-title"> Inner Peace Wellness Haven</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Holistic Wellness">
+                    <img src="https://cdn.prod.website-files.com/5bfd5ccdddc00c144ef694a4/5d1cd6794349043d8c446022_WEARABLES.jpg"
+                        class="card-img-top" alt="Holistic">
+                    <div class="card-body">
+                        <h5 class="card-title">Balance Retreat </h5>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stress reief Retreat Cards -->
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Stress Relief Retreat">
+                    <img src="https://avatars.mds.yandex.net/i?id=e6ff1595afc20c6bbd772e45cb7b5a652c992c08-7761916-images-thumbs&n=13"
+                        class="card-img-top" alt="Stress">
+                    <div class="card-body">
+                        <h5 class="card-title">Calm Waters Retreat </h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Stress Relief Retreat">
+                    <img src="https://avatars.mds.yandex.net/i?id=2de7e270b599decdff8de897d1b6b54c9225f44b-4538910-images-thumbs&n=13"
+                        class="card-img-top" alt="Stress">
+                    <div class="card-body">
+                        <h5 class="card-title">Peaceful Escape </h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Stress Relief Retreat">
+                    <img src="https://avatars.mds.yandex.net/i?id=3c56963c593b5388c806fd403e152fdcd2cb75bb-8406302-images-thumbs&n=13"
+                        class="card-img-top" alt="Stress">
+                    <div class="card-body">
+                        <h5 class="card-title"> Mindful Release Retreat</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Stress Relief Retreat">
+                    <img src="https://avatars.mds.yandex.net/i?id=b7c67bfe6c9b3620558116ed8cd535f8-5041987-images-thumbs&n=13"
+                        class="card-img-top" alt="Stress">
+                    <div class="card-body">
+                        <h5 class="card-title"> Stress-Free Oasis</h5>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personal growth -->
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Personal Growth">
+                    <img src="https://www.theretreatcompany.com/wp-content/uploads/2023/07/free-at-last-in-Crete-1440x768.jpg"
+                        class="card-img-top" alt="Personal">
+                    <div class="card-body">
+                        <h5 class="card-title"> Unlock Your Potential Retreat</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Personal Growth">
+                    <img src="https://www.theretreatcompany.com/wp-content/uploads/2023/07/Depositphotos_45242699_original-1440x768.jpg"
+                        class="card-img-top" alt="Personal">
+                    <div class="card-body">
+                        <h5 class="card-title">Awakening the Inner You </h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Personal Growth">
+                    <img src="https://www.theretreatcompany.com/wp-content/uploads/2023/07/horseback-riding-in-Crete-1440x768.jpg"
+                        class="card-img-top" alt="Personal">
+                    <div class="card-body">
+                        <h5 class="card-title"> Life Change Retreat</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Personal Growth">
+                    <img src="https://www.theretreatcompany.com/wp-content/uploads/2024/07/wasing_park-444-1440x768.jpg"
+                        class="card-img-top" alt="Personal">
+                    <div class="card-body">
+                        <h5 class="card-title">Transformative Experience Retreat </h5>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Creative expression -->
+
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Creative Expression">
+                    <img src="https://avatars.mds.yandex.net/i?id=4ca26f018ca4af22576d910ecf066b13ff9e1616baaab30d-13509485-images-thumbs&n=13"
+                        class="card-img-top" alt="Creative">
+                    <div class="card-body">
+                        <h5 class="card-title"> Expression Unleashed Retreat</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Creative Expression">
+                    <img src="https://avatars.mds.yandex.net/i?id=e50808ced764f9316e613bb80f13d8c2408ef2db-8491909-images-thumbs&n=13"
+                        class="card-img-top" alt="Creative">
+                    <div class="card-body">
+                        <h5 class="card-title"> Discover Your Creative Voice</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Creative Expression">
+                    <img src="https://avatars.mds.yandex.net/i?id=8a62db9980835a3684b8695caf31b92602b0da13-7886515-images-thumbs&n=13"
+                        class="card-img-top" alt="Creative">
+                    <div class="card-body">
+                        <h5 class="card-title"> Art of Mindfulness </h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Creative Expression">
+                    <img src="https://avatars.mds.yandex.net/i?id=29deb52cd56b4e9cd96d9847ff0a2a0d24398cb3-8209628-images-thumbs&n=13"
+                        class="card-img-top" alt="Creative">
+                    <div class="card-body">
+                        <h5 class="card-title">Creative Flow Retreat </h5>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- silent retreat -->
+
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Silent Retreat">
+                    <img src="https://bookretreats.com/cdn-cgi/image/width=420,quality=65,f=auto,sharpen=1,fit=cover,gravity=auto/assets/photo/retreat/0m/39k/39708/p_1368410/1000_1709388441.jpg"
+                        class="card-img-top" alt="silent">
+                    <div class="card-body">
+                        <h5 class="card-title">Quiet Reflection Retreat </h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Silent Retreat">
+                    <img src="https://bookretreats.com/cdn-cgi/image/width=420,quality=65,f=auto,sharpen=1,fit=cover,gravity=auto/assets/photo/retreat/0m/40k/40046/p_1383728/1000_1579853895.jpg"
+                        class="card-img-top" alt="silent">
+                    <div class="card-body">
+                        <h5 class="card-title">Quietude Retreat </h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Silent Retreat">
+                    <img src="https://bookretreats.com/cdn-cgi/image/width=420,quality=65,f=auto,sharpen=1,fit=cover,gravity=auto/assets/photo/retreat/0m/22k/22227/p_716900/1000_1648508888.jpg"
+                        class="card-img-top" alt="silent">
+                    <div class="card-body">
+                        <h5 class="card-title"> Silence Sanctuary</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Silent Retreat">
+                    <img src="https://bookretreats.com/cdn-cgi/image/width=420,quality=65,f=auto,sharpen=1,fit=cover,gravity=auto/assets/photo/retreat/0m/38k/38629/p_1319722/1000_1687189950.jpg"
+                        class="card-img-top" alt="silent">
+                    <div class="card-body">
+                        <h5 class="card-title"> Peaceful Presence Retreat</h5>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- senior wellnes -->
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Wellness for Seniors">
+                    <img src="https://avatars.mds.yandex.net/i?id=7a75b0ce5922f11cd070483575c3d99100f0fba4-4902600-images-thumbs&n=13"
+                        class="card-img-top" alt="senior">
+                    <div class="card-body">
+                        <h5 class="card-title">Golden Years Wellness Retreat </h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Wellness for Seniors">
+                    <img src="https://avatars.mds.yandex.net/i?id=1f69be62f4b2d43c70674d34e7fe63c5a875d5bb134483d7-12476725-images-thumbs&n=13"
+                        class="card-img-top" alt="senior">
+                    <div class="card-body">
+                        <h5 class="card-title"> Joyful Living Retreat for Seniors</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Wellness for Seniors">
+                    <img src="https://avatars.mds.yandex.net/i?id=c77d6cd5c78e37cc4a0d6b85c121daa4d1f3a6027489b1c0-10652477-images-thumbs&n=13"
+                        class="card-img-top" alt="senior">
+                    <div class="card-body">
+                        <h5 class="card-title"> Wisdom and Wellness Retreat</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Wellness for Seniors">
+                    <img src="https://avatars.mds.yandex.net/i?id=9ee78c55be7e785232023e991e36df1e955bb48e-4011168-images-thumbs&n=13"
+                        class="card-img-top" alt="senior">
+                    <div class="card-body">
+                        <h5 class="card-title">Nurturing the Golden Years </h5>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- women empowerment -->
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Women Empowerment">
+                    <img src="https://avatars.mds.yandex.net/i?id=ed93ce84383e1f580ab14b4382602f9a5247bafadd04d20f-13486952-images-thumbs&n=13"
+                        class="card-img-top" alt="senior">
+                    <div class="card-body">
+                        <h5 class="card-title"> Women of Strength Retreat </h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Women Empowerment">
+                    <img src="https://avatars.mds.yandex.net/i?id=1131b74ddda8bdc89cdd3b4c072fea9f666ba682-12752860-images-thumbs&n=13"
+                        class="card-img-top" alt="senior">
+                    <div class="card-body">
+                        <h5 class="card-title">Embrace Your Journey Retreat</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Women Empowerment">
+                    <img src="https://avatars.mds.yandex.net/i?id=b799acfbba57be4aa7ea91c989a5f5be8b0f49ed21c3f4dc-12491641-images-thumbs&n=13"
+                        class="card-img-top" alt="senior">
+                    <div class="card-body">
+                        <h5 class="card-title"> Sisterhood of Empowerment </h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Women Empowerment">
+                    <img src="https://avatars.mds.yandex.net/i?id=08a7cb71543f2682b2e970dd0217d10c2b530a97-9069510-images-thumbs&n=13"
+                        class="card-img-top" alt="senior">
+                    <div class="card-body">
+                        <h5 class="card-title"> EmpowerHER Retreat</h5>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Men's wellness -->
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Men's Wellness">
+                    <img src="https://avatars.mds.yandex.net/i?id=2145fd39407c28e1a42dc6a9e66a2867-4260084-images-thumbs&n=13"
+                        class="card-img-top" alt="Men's wellness">
+                    <div class="card-body">
+                        <h5 class="card-title">Stronger Together Retreat</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Men's Wellness">
+                    <img src="https://avatars.mds.yandex.net/i?id=d955bcd682ba589e0406f5fad0c8a06aff44a3ff-11944133-images-thumbs&n=13"
+                        class="card-img-top" alt="Men's wellness">
+                    <div class="card-body">
+                        <h5 class="card-title"> Reclaim Your Power Retreat
+                        </h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Men's Wellness">
+                    <img src="https://avatars.mds.yandex.net/i?id=1f1b7826d48ba6d6d2e15c24358722977edd0c51-8225379-images-thumbs&n=13"
+                        class="card-img-top" alt="Men's wellness">
+                    <div class="card-body">
+                        <h5 class="card-title"> Rise Up: Men's Wellness Retreat</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Men's Wellness">
+                    <img src="https://avatars.mds.yandex.net/i?id=9a8ab15fbbbe2225c3b16ff062f6d2b35e766e19-8184763-images-thumbs&n=13"
+                        class="card-img-top" alt="Men's wellness">
+                    <div class="card-body">
+                        <h5 class="card-title"> Brotherhood of Wellness Retreat</h5>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Detox and cleanse -->
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Detox and Cleanse">
+                    <img src="https://avatars.mds.yandex.net/i?id=8555d4555e68edc7ae8de258929fb26e96d66617-12423090-images-thumbs&n=13"
+                        class="card-img-top" alt="Detox and Cleanse">
+                    <div class="card-body">
+                        <h5 class="card-title"> Fresh Start Detox Retreat</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Detox and Cleanse">
+                    <img src="https://avatars.mds.yandex.net/i?id=1b13d4291205c7bfb140dd171a33f87093bca613-9744150-images-thumbs&ref=rim&n=33&w=400&h=300"
+                        class="card-img-top" alt="Detox and Cleanse">
+                    <div class="card-body">
+                        <h5 class="card-title">Cheerful Cleanse Journey</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Detox and Cleanse">
+                    <img src="https://avatars.mds.yandex.net/i?id=6aef7c80c0694a6e8eb003c59f0fe3d466db5046-9836683-images-thumbs&ref=rim&n=33&w=469&h=300"
+                        class="card-img-top" alt="Detox and Cleanse">
+                    <div class="card-body">
+                        <h5 class="card-title"> Delightful Detox Escape</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Detox_cleanse">
+                    <img src="https://avatars.mds.yandex.net/i?id=46464142060f19345efeeb29690aadf5381403b2-7975524-images-thumbs&ref=rim&n=33&w=443&h=300"
+                        class="card-img-top" alt="Detox and Cleanse">
+                    <div class="card-body">
+                        <h5 class="card-title">Joyful Renewal Retreat</h5>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Nature immersion -->
+
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Nature Immersion">
+                    <img src="https://www.uplandscenter.org/wp-content/uploads/2019/10/Copy-of-upland-exterior-day3-0053.jpg"
+                        class="card-img-top" alt="Detox_cleanse">
+                    <div class="card-body">
+                        <h5 class="card-title">Nature Connection Retreat</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Nature Immersion">
+                    <img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F752740739%2F823944024563%2F1%2Foriginal.png?w=600&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C0%2C940%2C470&s=215520ee494f14d9bc18aa99ef90cc32"
+                        class="card-img-top" alt="Detox_cleanse">
+                    <div class="card-body">
+                        <h5 class="card-title">Peaceful Forest Immersion</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Nature Immersion">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm1D4XfbGhes50fiWzoo47fYxRta-_A8mfx7go9uoBdF9R3FsqfXBOFK78MtsTu81ls-4&usqp=CAU"
+                        class="card-img-top" alt="Detox_cleanse">
+                    <div class="card-body">
+                        <h5 class="card-title">Refreshing Nature Getaway</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Nature Immersion">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsE0QyhjOlZQmiL4Z0KsmEXk4g0n2KSguJLw9vKrzfF7Hc9hsnJY2LtyqzAqDQ9MJZ6m4&usqp=CAU"
+                        class="card-img-top" alt="Detox_cleanse">
+                    <div class="card-body">
+                        <h5 class="card-title">Nature's Renewal Retreat</h5>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- workshop -->
+
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Digital Wellness Workshop">
+                    <img src="https://avatars.mds.yandex.net/i?id=2b4ada6ed2956f22329cc906d7309e0ee9369bc1-9203641-images-thumbs&n=13"
+                        class="card-img-top" alt="workshop">
+                    <div class="card-body">
+                        <h5 class="card-title"> Balance Bootcamp</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Digital Wellness Workshop">
+                    <img src="https://avatars.mds.yandex.net/i?id=2b506359160b794b1f53ea45ed28eada54e7b37c-8751582-images-thumbs&n=13"
+                        class="card-img-top" alt="workshop">
+                    <div class="card-body">
+                        <h5 class="card-title">Tech Detox Workshop</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Digital Wellness Workshop">
+                    <img src="https://avatars.mds.yandex.net/i?id=19508882f13068f3bb4720e75506a1d8a0fc3c9e-4888906-images-thumbs&n=13"
+                        class="card-img-top" alt="workshop">
+                    <div class="card-body">
+                        <h5 class="card-title">Digital Wellness Masterclass</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Digital Wellness Workshop">
+                    <img src="https://avatars.mds.yandex.net/i?id=b2ce1b9677841601997ad0b1de084bd3b923c722-7452211-images-thumbs&n=13"
+                        class="card-img-top" alt="workshop">
+                    <div class="card-body">
+                        <h5 class="card-title">Connected Yet Present </h5>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Parents wellness -->
+
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Wellness for Parents">
+                    <img src="https://avatars.mds.yandex.net/i?id=3fad662a2f3705077ce171cbfc7ab68295158c43-4544610-images-thumbs&n=13"
+                        class="card-img-top" alt="Parents_wellness">
+                    <div class="card-body">
+                        <h5 class="card-title">Parenting with Presence Retreat</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Wellness for Parents">
+                    <img src="https://avatars.mds.yandex.net/i?id=0973236d852a1407f34a4c049606fa0b2af99240-9181119-images-thumbs&n=13"
+                        class="card-img-top" alt="Parents_wellness">
+                    <div class="card-body">
+                        <h5 class="card-title">Stress-Free Parenting Experience</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Wellness for Parents">
+                    <img src="https://avatars.mds.yandex.net/i?id=c0187c012d415a59292f331aaee1e3ac78d0504d-10674688-images-thumbs&n=13"
+                        class="card-img-top" alt="Parents_wellness">
+                    <div class="card-body">
+                        <h5 class="card-title">Parenting with Purpose Retreat</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card p-0" data-name="Wellness for Parents">
+                    <img src="https://avatars.mds.yandex.net/i?id=0e12e7da80baa12e031918c30ca8881f6075c4ea-5337213-images-thumbs&n=13"
+                        class="card-img-top" alt="Parents_wellness">
+                    <div class="card-body">
+                        <h5 class="card-title">Mindful Moments for Parents</h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Social media links (commented out) -->
+
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links -->
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <img src="../Green Wellness Flat Illustrative Health and Fitness Platform Logo.png"
+                            style="height: 50px;width: 130px; object-fit: cover;object-position: center;" class=""
+                            alt="">
+                        <p>
+                            Experience the ultimate rejuvenation with our diverse wellness programs tailored for
+                            everyone.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4" style="font-weight: bold;">
+                            Programs
+                        </h6>
+                        <p class="hover-color">
+                            <a href="../html files/programm.html" class="text-reset text-decoration-none">Mindfulness
+                                Meditation</a>
+                        </p>
+                        <p class="hover-color">
+                            <a href="../html files/programm.html" class="text-reset text-decoration-none">Digital
+                                Detox</a>
+                        </p>
+                        <p class="hover-color">
+                            <a href="../html files/programm.html" class="text-reset text-decoration-none">Yoga
+                                Wellness</a>
+                        </p>
+                        <p class="hover-color">
+                            <a href="../html files/programm.html" class="text-reset text-decoration-none">Nature
+                                Immersion</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4" style="font-weight: bold;">
+                            Useful links
+                        </h6>
+                        <p class="hover-color">
+                            <a href="../html files/loginsignup.html"
+                                class="text-reset text-decoration-none">Reservation</a>
+                        </p>
+                        <p class="hover-color">
+                            <a href="../html files/schedule.html" class="text-reset text-decoration-none">Schedule</a>
+                        </p>
+                        <p class="hover-color">
+                            <a href="../html files/blog.html" class="text-reset text-decoration-none">Blog</a>
+                        </p>
+                        <p class="hover-color">
+                            <a href="../html files/contact.html" class="text-reset text-decoration-none">Contact</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4" style="font-weight: bold;">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p style="font-size: 15px;">
+                            <i class="fas fa-envelope me-3"></i>
+                            <a href="mailto:info@digitalwellnessretreat.com"
+                                class="text-reset text-decoration-none">info@digitalwellnessretreat.com</a>
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links -->
+
+        <!-- Copyright -->
+        <div class="text-center p-1" style="background-color: #0d6e41; color: white;">
+            © 2024 Copyright:
+            <a class="text-reset text-decoration-none fw-bold" href="https://digitalwellnessretreat.com/"
+                target="_blank">Digital Wellness Retreat</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+    <a href="#" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></span>
+    </a>
+
+    <!-- Bootstrap JS (Latest version for components and utilities) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap JS (Alpha version 1, potentially duplicate of the previous Bootstrap link) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const filterButtons = document.querySelectorAll("#filter-buttons button");
+            const cards = document.querySelectorAll("#filterable-cards .card");
+
+            filterButtons.forEach(button => {
+                button.addEventListener("click", function () {
+                    filterButtons.forEach(btn => btn.classList.remove("active"));
+                    this.classList.add("active");
+
+                    const filterValue = this.getAttribute("data-filter");
+                    cards.forEach(card => {
+                        const dataName = card.getAttribute("data-name");
+                        if (filterValue === "all" || dataName.includes(filterValue)) {
+                            card.classList.remove("hide");
+                        } else {
+                            card.classList.add("hide");
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+
+    <!-- AOS (Animate On Scroll) Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Bootstrap 4.5.2 JavaScript Bundle (Includes Popper.js) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Initialize AOS -->
+    <script>
+        // AOS Initialization
+        AOS.init({
+            // duration: 1000, // Duration of animation
+            easing: 'ease-in-out', // Easing function for animation
+        });
+
+
+    </script>
+
+    <!-------------------------- Blocking Page ------------------------------>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const authLink = document.getElementById('auth-link');
+            const logoutLink = document.getElementById('logout-link');
+            const usernameNav = document.getElementById('username-nav');
+
+            // Check if the user is logged in
+            if (localStorage.getItem('loggedIn') === 'true') {
+                authLink.classList.add('d-none'); // Hide Register/SignIn
+                logoutLink.classList.remove('d-none'); // Show Logout
+
+                const user = JSON.parse(localStorage.getItem('user'));
+                if (user && user.name) {
+                    usernameNav.innerText = user.name; // Display user's name in the navbar
+                }
+            } else {
+                authLink.classList.remove('d-none'); // Show Register/SignIn
+                logoutLink.classList.add('d-none'); // Hide Logout
+                usernameNav.innerText = ''; // Clear username display
+
+                // Optional: Only redirect from specific pages if needed
+                // Uncomment the line below if you want to redirect only from restricted pages
+                // if (window.location.pathname === '/restricted-page.html') {
+                //     window.location.href = './loginsignup.html';
+                // }
+            }
+
+            // Logout functionality
+            document.getElementById('logout').addEventListener('click', function () {
+                localStorage.removeItem('loggedIn');
+                localStorage.removeItem('user');
+                // Redirect to the home page or login page after logout
+                window.location.href = './gallery.html'; // Change this to your home page
+            });
+        });
+
+        const updateNavbar = () => {
+            const loggedIn = localStorage.getItem('loggedIn');
+            const username = localStorage.getItem('username');
+
+            const usernameNav = document.getElementById('username-nav');
+            if (loggedIn === 'true' && usernameNav) {
+                usernameNav.innerText = `${username}`;
+            } else if (usernameNav) {
+                usernameNav.innerText = ``;
+            }
+        }
+
+        updateNavbar();
+
+    </script>
+</body>
+
+</html>

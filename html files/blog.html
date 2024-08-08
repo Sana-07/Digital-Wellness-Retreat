@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom CSS for Blog -->
+    <link rel="stylesheet" href="../css/blog.css">
+
+    <!-- Bootstrap CSS (Alpha version 1) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <!-- Favicon for the Blog -->
+    <link rel="shortcut icon" href="../Green Wellness Flat Illustrative Health and Fitness Platform Logo.png"
+        type="image/x-icon">
+
+
+    <!-- FontAwesome CSS for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+ <!-- Google font -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+   rel="stylesheet">
+    <!-- Swiper CSS for Image/Content Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <title> Digital Wellness Retreat</title>
+
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../Green Wellness Flat Illustrative Health and Fitness Platform Logo.png"
+                    style="height: 60px;width: 140px; object-fit: cover;object-position: center;" class="" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase active text-dark" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase text-dark" href="../html files/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase text-dark"
+                            href="../html files/programm.html">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase text-dark" href="../html files/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase text-dark"
+                            href="../html files/reservation.html">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase text-dark"
+                            href="../html files/schedule.html">Schedules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase text-dark" href="../html files/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" id="auth-link">
+                        <a class="nav-link text-dark" href="./loginsignup.html">
+                            <!-- <i class="fa fa-sign-in" aria-hidden="true"></i> -->
+                            <span class="text-dark">Register/Sign In</span>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none" id="logout-link">
+                        <a class="nav-link text-dark" href="#">
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                            <span id="logout" class="text-dark">Sign Out</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">
+                            <i class="fa-solid fa-user" aria-hidden="true"></i>
+                            <span id="username-nav"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <section class="video-section">
+        <video autoplay muted loop id="bg-video">
+            <source src="../video/3127017-uhd_3840_2160_24fps.mp4.crdownload" type="video/mp4" style="height: 300px;">
+        </video>
+        <!-- <div class="content" data-aos="">
+            <h1>Welcome to Our Website</h1>
+            <p>Experience the best content with a stunning video background.</p>
+        </div> -->
+    </section>
+
+    <!-- Brand Collection -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 card-brand" data-aos="fade-right">
+                <h1 class="text-center mt-5 mb-4 py-3" style=" font-family: Platypi, serif;
+                font-style: italic;
+                ">New Digital Experiences</h1>
+                <img src="https://avatars.mds.yandex.net/i?id=08111db3db855677661c2c02ba93f03a4c7486e4-9820447-images-thumbs&n=13"
+                    style="width: 100%;" alt="">
+                <p class="mt-5 px-2">
+                    Embrace a new era of digital wellness with our cutting-edge experiences! Harness the power of
+                    technology to support your mental and emotional well-being. Our offerings include immersive virtual
+                    retreats, engaging workshops, and innovative tools to help you navigate the challenges of the
+                    digital world. Join us in transforming your wellness journey through digital innovation!
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 card-brand" data-aos="fade-left">
+                <h1 class="text-center mt-5 py-3 mb-4" style=" font-family: Platypi, serif;
+                font-style: italic;
+                ">Top Retreats</h1>
+                <img src="https://avatars.mds.yandex.net/i?id=6d25fd3508d8b2ea74e0ebc909c9b2d2fb5d149c4e1ae462-13095363-images-thumbs&n=13"
+                    style="width: 100%;" alt="">
+                <p class="mt-5 px-3">
+                    Dive into our selection of top retreats that seamlessly blend wellness practices with the latest
+                    digital advancements. From serene nature escapes to interactive online sessions, our retreats are
+                    crafted to rejuvenate your spirit and foster connection. Discover programs that cater to every
+                    aspect of your well-being, helping you find peace and balance in today’s fast-paced world.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Swiper -->
+    <div class="container mb-5">
+        <div class="header text-center">
+            <h1 class="mb-5 py-2" data-aos="fade-bottom" style=" font-family: Platypi, serif;
+            font-style: italic;
+            ">Popular Digital Insights</h1>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper mt-5 mb-5">
+                <!-- Slide 1 -->
+                <div class="swiper-slide" data-aos="fade-up">
+                    <div class="card shadow-sm hover-effect" style="width: 18rem;">
+                        <img src="https://avatars.mds.yandex.net/i?id=4f7904eea3eb431e1d84b461e7e6fc6821fac750-9699933-images-thumbs&n=13"
+                            class="card-img-top" alt="Blog Image 1">
+                        <div class="card-body">
+                            <p class="card-text">Explore the impact of mindfulness apps on digital well-being. Learn how
+                                these tools are reshaping stress and enhance mental health through
+                                digital experiences.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="swiper-slide" data-aos="fade-up">
+                    <div class="card shadow-sm hover-effect" style="width: 18rem;">
+                        <img src="https://avatars.mds.yandex.net/i?id=10f2344dd0c4d88f7f0a42e9c314592b-4944743-images-thumbs&n=13"
+                            class="card-img-top" alt="Blog Image 2">
+                        <div class="card-body">
+                            <p class="card-text">Discover the benefits of digital detox programs and how they can help
+                                you reconnect with yourself and your surroundings in a meaningful way.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="swiper-slide" data-aos="fade-up">
+                    <div class="card shadow-sm hover-effect" style="width: 18rem;">
+                        <img src="https://avatars.mds.yandex.net/i?id=be785b80ff4015ae2615dec0455a4b8f51d75f12df662d48-5229055-images-thumbs&n=13"
+                            class="card-img-top" alt="Blog Image 3">
+                        <div class="card-body">
+                            <p class="card-text">Learn about the latest trends in digital wellness and how emerging
+                                technologies are changing the way we approach health and well-being.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="swiper-slide" data-aos="fade-up">
+                    <div class="card shadow-sm hover-effect" style="width: 18rem;">
+                        <img src="https://avatars.mds.yandex.net/i?id=c92e9ca2005632713c7141bbb5302d69362e54ff-12911696-images-thumbs&n=13"
+                            class="card-img-top" alt="Blog Image 4">
+                        <div class="card-body">
+                            <p class="card-text">Understand the role of digital wellness retreats in enhancing mental
+                                health and achieving a balanced lifestyle in the digital age.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="swiper-slide" data-aos="fade-up">
+                    <div class="card shadow-sm hover-effect" style="width: 18rem;">
+                        <img src="https://avatars.mds.yandex.net/i?id=88dbb1f2e3fb7753c97def911351921c-5888045-images-thumbs&n=13"
+                            class="card-img-top" alt="Blog Image 5">
+                        <div class="card-body">
+                            <p class="card-text">Explore innovative digital tools and apps designed to support your
+                                well-being and foster a more mindful digital lifestyle.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 6 -->
+                <div class="swiper-slide" data-aos="fade-up">
+                    <div class="card shadow-sm hover-effect" style="width: 18rem;">
+                        <img src="https://avatars.mds.yandex.net/i?id=e23780b4a09ec465d699c4c2978a9d84c50222db-9848498-images-thumbs&n=13"
+                            class="card-img-top" alt="Blog Image 6">
+                        <div class="card-body">
+                            <p class="card-text">Discover the benefits of integrating technology with holistic wellness
+                                practices to achieve a balanced and fulfilling life.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+    </div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="container mb-5">
+        <div class="header text-center">
+            <h1 class="mb-5 py-4" data-aos="fade-up" style=" font-family: Platypi, serif;
+            font-style: italic;
+            ">Participant Feedback</h1>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+                <div class="carousel-item active">
+                    <img class="rounded-circle shadow-1-strong mb-4"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpuslnFCfpO-AtYOdWOmrOQRHDSrGpXUSI3A&usqp=CAU"
+                        alt="Mercy Susan" style="width: 150px;">
+                    <div class="d-flex flex-column text-dark mb-5">
+                        <h5 class="mt-2">Mercy Susan</h5>
+                        <p class="mt-4 px-3" data-aos="fade-right">
+                            "I was amazed by the immersive digital wellness retreat experience. It helped me find
+                            balance in the digital world and prioritize my well-being. Highly recommend it to anyone
+                            seeking mindfulness and digital detox."
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="rounded-circle shadow-1-strong mb-4"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXndvZy2xnmWO6HvOZ5CGpsC8P88C6XyhRDA&usqp=CAU"
+                        alt="John Doe" style="width: 150px;">
+                    <div class="d-flex flex-column text-dark mb-5">
+                        <h5 class="mt-2">John Doe</h5>
+                        <p class="mt-4 px-3" data-aos="fade-right">
+                            "A transformative experience! The digital wellness retreat provided practical tools to
+                            manage screen time and enhance my digital well-being. A must-try for everyone!"
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="rounded-circle shadow-1-strong mb-4"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjedUPLqxRnyoGffedLv_NJYPHG4PsVJAAtwkGEgp8OQ&s"
+                        alt="Jane Smith" style="width: 150px;">
+                    <div class="d-flex flex-column text-dark mb-5">
+                        <h5 class="mt-2">Jane Smith</h5>
+                        <p class="mt-4 px-3 fw-light" data-aos="fade-right">
+                            "This retreat was an eye-opener. It made me realize the importance of digital wellness. The
+                            sessions were enlightening and the approach was very holistic."
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Blog Section -->
+    <div class="container my-5">
+        <h1 class="text-center mb-5" data-aos="fade-bottom" style=" font-family: Platypi, serif;
+        font-style: italic;
+        ">Latest Blog Posts</h1>
+        <div class="row" id="blogContainer">
+            <!-- Initial Visible Blog Posts -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 blog-post" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="https://avatars.mds.yandex.net/i?id=3a99a1368b88e641754b755422a5c3e11a25c979-9425828-images-thumbs&n=13"
+                        class="card-img-top" alt="Blog Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Digital Detox: A Modern Necessity</h5>
+                        <p class="card-text fw-light">Discover why digital detoxes are essential in today's
+                            hyper-connected
+                            world. Learn practical tips to unplug and rejuvenate your mind.</p>
+                        <!-- <a href="#" class="btn btn-primary">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 blog-post" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="https://avatars.mds.yandex.net/i?id=5611df147a0df617d678c322034d2002d7c967b3-7543473-images-thumbs&n=13"
+                        class="card-img-top" alt="Blog Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Mindfulness Apps for Mental Health</h5>
+                        <p class="card-text fw-light">Explore the impact of mindfulness apps on digital well-being.
+                            Learn how
+                            these tools are reshaping the way we manage stress and enhance mental health through digital
+                            experiences.</p>
+                        <!-- <a href="#" class="btn btn-primary">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 blog-post" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="https://avatars.mds.yandex.net/i?id=d56f6643da1743c45ee3e798955fc02b4a4df596-4828899-images-thumbs&n=13"
+                        class="card-img-top" alt="Blog Image">
+                    <div class="card-body">
+                        <h5 class="card-title">The Rise of Digital Wellness</h5>
+                        <p class="card-text fw-light">Learn about the growing trend of digital wellness and how it is
+                            changing
+                            our approach to health and well-being in the digital age.</p>
+                        <!-- <a href="#" class="btn btn-primary">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Initially Hidden Blog Posts -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 blog-post d-none" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="https://avatars.mds.yandex.net/i?id=c3f34036d2deecaef157eaf92aff62268189c71e-9211188-images-thumbs&n=13"
+                        class="card-img-top" alt="Blog Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Tech and Mental Health: Finding Balance</h5>
+                        <p class="card-text fw-light">Discover the link between technology and mental health, and
+                            explore
+                            strategies for finding balance in the digital world.</p>
+                        <!-- <a href="#" class="btn btn-primary">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 blog-post d-none" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="https://avatars.mds.yandex.net/i?id=87efb4afe19c819fdab5572849d5a1963c95ed5c-8220915-images-thumbs&n=13"
+                        class="card-img-top" alt="Blog Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Digital Detox Retreats: An Overview</h5>
+                        <p class="card-text fw-light">Explore the concept of digital detox retreats and how they can
+                            help you
+                            disconnect and recharge in a tech-free environment.</p>
+                        <!-- <a href="#" class="btn btn-primary">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 blog-post d-none" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="https://avatars.mds.yandex.net/i?id=f5340f8d324f4bebf25742a21b7c0afbdd7c14c4-9229750-images-thumbs&n=13"
+                        class="card-img-top" alt="Blog Image">
+                    <div class="card-body">
+                        <h5 class="card-title">The Benefits of Digital Minimalism</h5>
+                        <p class="card-text fw-light">Learn about digital minimalism and how reducing your digital
+                            consumption
+                            can improve your overall well-being.</p>
+                        <!-- <a href="#" class="btn btn-primary">Read More</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <button id="viewMoreBtn" class="btn btn-outline-primary">View More</button>
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links -->
+        <section>
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <img src="../Green Wellness Flat Illustrative Health and Fitness Platform Logo.png"
+                            style="height: 50px;width: 130px; object-fit: cover;object-position: center;" class=""
+                            alt="">
+                        <p>
+                            Experience the ultimate rejuvenation with our diverse wellness programs tailored for
+                            everyone.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4" style="font-weight: bold;">
+                            Programs
+                        </h6>
+                        <p class="hover-color">
+                            <a href="../html files/programm.html" class="text-reset text-decoration-none">Mindfulness
+                                Meditation</a>
+                        </p>
+                        <p class="hover-color">
+                            <a href="../html files/programm.html" class="text-reset text-decoration-none">Digital
+                                Detox</a>
+                        </p>
+                        <p class="hover-color">
+                            <a href="../html files/programm.html" class="text-reset text-decoration-none">Yoga
+                                Wellness</a>
+                        </p>
+                        <p class="hover-color">
+                            <a href="../html files/programm.html" class="text-reset text-decoration-none">Nature
+                                Immersion</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4" style="font-weight: bold;">
+                            Useful links
+                        </h6>
+                        <p class="hover-color">
+                            <a href="../html files/loginsignup.html"
+                                class="text-reset text-decoration-none">Reservation</a>
+                        </p>
+                        <p class="hover-color">
+                            <a href="../html files/schedule.html" class="text-reset text-decoration-none">Schedule</a>
+                        </p>
+                        <p class="hover-color">
+                            <a href="../html files/blog.html" class="text-reset text-decoration-none">Blog</a>
+                        </p>
+                        <p class="hover-color">
+                            <a href="../html files/contact.html" class="text-reset text-decoration-none">Contact</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4" style="font-weight: bold;">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i><a href="mailto:info@digitalwellnessretreat.com"
+                                class="text-reset text-decoration-none">info@digitalwellnessretreat.com</a>
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links -->
+
+        <!-- Copyright -->
+        <div class="text-center p-1" style="background-color: #0d6e41; color: white;">
+            © 2024 Copyright:
+            <a class="text-reset text-decoration-none fw-bold" href="https://digitalwellnessretreat.com/"
+                target="_blank">Digital Wellness Retreat</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+
+    <a href="#" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></span>
+    </a>
+
+
+
+
+
+
+
+
+    <!-- AOS (Animate On Scroll) Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Bootstrap JS (Version 5.3.2) with integrity check -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeo7F5tJGd5lByp6iQdMdX1/8cf8f+9GhtCHn5JLMwN5N4U0"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS (Version 5.3.0) -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap JS (Alpha Version 5.3.0) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Swiper Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        // AOS Initialization
+        AOS.init({
+            duration: 1000, // Duration of animation
+            easing: 'ease-in-out', // Easing function for animation
+        });
+
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+
+
+        document.getElementById('viewMoreBtn').addEventListener('click', function () {
+            var hiddenBlogs = document.querySelectorAll('.blog-post.d-none');
+            for (var i = 0; i < 3 && i < hiddenBlogs.length; i++) {
+                hiddenBlogs[i].classList.remove('d-none');
+            }
+
+            // If no more blogs to show, hide the button
+            if (document.querySelectorAll('.blog-post.d-none').length === 0) {
+                this.style.display = 'none';
+            }
+        });
+
+    </script>
+
+
+    <!-------------------------- Blocking Page ------------------------------>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const authLink = document.getElementById('auth-link');
+            const logoutLink = document.getElementById('logout-link');
+            const usernameNav = document.getElementById('username-nav');
+
+            // Check if the user is logged in
+            if (localStorage.getItem('loggedIn') === 'true') {
+                authLink.classList.add('d-none'); // Hide Register/SignIn
+                logoutLink.classList.remove('d-none'); // Show Logout
+
+                const user = JSON.parse(localStorage.getItem('user'));
+                if (user && user.name) {
+                    usernameNav.innerText = user.name; // Display user's name in the navbar
+                }
+            } else {
+                authLink.classList.remove('d-none'); // Show Register/SignIn
+                logoutLink.classList.add('d-none'); // Hide Logout
+                usernameNav.innerText = ''; // Clear username display
+
+                // Optional: Only redirect from specific pages if needed
+                // Uncomment the line below if you want to redirect only from restricted pages
+                // if (window.location.pathname === '/restricted-page.html') {
+                //     window.location.href = './loginsignup.html';
+                // }
+            }
+
+            // Logout functionality
+            document.getElementById('logout').addEventListener('click', function () {
+                localStorage.removeItem('loggedIn');
+                localStorage.removeItem('user');
+                // Redirect to the home page or login page after logout
+                window.location.href = './blog.html'; // Change this to your home page
+            });
+        });
+
+        const updateNavbar = () => {
+            const loggedIn = localStorage.getItem('loggedIn');
+            const username = localStorage.getItem('username');
+
+            const usernameNav = document.getElementById('username-nav');
+            if (loggedIn === 'true' && usernameNav) {
+                usernameNav.innerText = `${username}`;
+            } else if (usernameNav) {
+                usernameNav.innerText = ``;
+            }
+        }
+
+        updateNavbar();
+
+    </script>
+
+
+
+</body>
+
+</html>

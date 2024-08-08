@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap 4.5.2 CSS (Removed in favor of Bootstrap 5.3.0) -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom schedule CSS -->
+  <link rel="stylesheet" href="../css/schedule.css">
+
+  <!-- AOS (Animate On Scroll) library CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+  <!-- Favicon for the Blog -->
+  <link rel="shortcut icon" href="../Green Wellness Flat Illustrative Health and Fitness Platform Logo.png"
+    type="image/x-icon">
+ <!-- Google font -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+   rel="stylesheet">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Google Fonts - Open Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Bootstrap 5.3.0 CSS (Added to update Bootstrap version) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <title> Digital Wellness Retreat</title>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="../Green Wellness Flat Illustrative Health and Fitness Platform Logo.png"
+          style="height: 60px;width: 140px; object-fit: cover;object-position: center;" class="" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link mx-2 text-uppercase active text-dark" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 text-uppercase text-dark" href="../html files/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 text-uppercase text-dark" href="../html files/programm.html">Programs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 text-uppercase text-dark" href="../html files/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 text-uppercase text-dark" href="../html files/reservation.html">Reservation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 text-uppercase text-dark" href="./schedule.html">Schedules</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 text-uppercase text-dark" href="../html files/contact.html">Contact</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item" id="auth-link">
+            <a class="nav-link text-dark" href="./loginsignup.html">
+              <!-- <i class="fa fa-sign-in" aria-hidden="true"></i> -->
+              <span class="text-dark">Register/Sign In</span>
+            </a>
+          </li>
+          <li class="nav-item d-none" id="logout-link">
+            <a class="nav-link text-dark" href="#">
+              <i class="fa fa-sign-out" aria-hidden="true"></i>
+              <span id="logout" class="text-dark">Sign Out</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">
+              <i class="fa-solid fa-user" aria-hidden="true"></i>
+              <span id="username-nav"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <section class="video-section">
+    <video autoplay muted loop id="bg-video">
+      <source src="../video/3191289-uhd_4096_2160_25fps.mp4" type="video/mp4">
+    </video>
+  </section>
+
+
+  <div class="container mt-5">
+    <h1 class="text-center mb-5 mt-5" data-aos="fade-up">Digital Wellness Retreat Schedule</h1>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="list-group" id="list-tab" role="tablist" data-aos="fade-up" style="    font-family: Platypi, serif;
+        font-style: italic;">
+          <a class="list-group-item list-group-item-action active" id="list-mindfulness-list" data-toggle="list"
+            href="#list-mindfulness" role="tab" aria-controls="mindfulness">Mindfulness Meditation</a>
+          <a class="list-group-item list-group-item-action" id="list-detox-list" data-toggle="list" href="#list-detox"
+            role="tab" aria-controls="detox">Digital Detox Retreat</a>
+          <a class="list-group-item list-group-item-action" id="list-holistic-list" data-toggle="list"
+            href="#list-holistic" role="tab" aria-controls="holistic">Holistic Wellness</a>
+          <a class="list-group-item list-group-item-action" id="list-stress-list" data-toggle="list" href="#list-stress"
+            role="tab" aria-controls="stress">Stress Relief Retreat</a>
+          <a class="list-group-item list-group-item-action" id="list-growth-list" data-toggle="list" href="#list-growth"
+            role="tab" aria-controls="growth">Personal Growth</a>
+          <a class="list-group-item list-group-item-action" id="list-yoga-list" data-toggle="list" href="#list-yoga"
+            role="tab" aria-controls="yoga">Yoga Wellness</a>
+          <a class="list-group-item list-group-item-action" id="list-creative-list" data-toggle="list"
+            href="#list-creative" role="tab" aria-controls="creative">Creative Expression</a>
+          <a class="list-group-item list-group-item-action" id="list-silent-list" data-toggle="list" href="#list-silent"
+            role="tab" aria-controls="silent">Silent Retreat</a>
+          <a class="list-group-item list-group-item-action" id="list-seniors-list" data-toggle="list"
+            href="#list-seniors" role="tab" aria-controls="seniors">Wellness for Seniors</a>
+          <a class="list-group-item list-group-item-action" id="list-women-list" data-toggle="list" href="#list-women"
+            role="tab" aria-controls="women">Women Empowerment</a>
+          <a class="list-group-item list-group-item-action" id="list-men-list" data-toggle="list" href="#list-men"
+            role="tab" aria-controls="men">Men's Wellness</a>
+          <a class="list-group-item list-group-item-action" id="list-cleanse-list" data-toggle="list"
+            href="#list-cleanse" role="tab" aria-controls="cleanse">Detox and Cleanse</a>
+          <a class="list-group-item list-group-item-action" id="list-nature-list" data-toggle="list" href="#list-nature"
+            role="tab" aria-controls="nature">Nature Immersion</a>
+          <a class="list-group-item list-group-item-action" id="list-workshop-list" data-toggle="list"
+            href="#list-workshop" role="tab" aria-controls="workshop">Digital Wellness Workshop</a>
+          <a class="list-group-item list-group-item-action" id="list-parents-list" data-toggle="list"
+            href="#list-parents" role="tab" aria-controls="parents">Wellness for Parents</a>
+        </div>
+      </div>
+      <div class="col-md-9" data-aos="fade-up">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="list-mindfulness" role="tabpanel"
+            aria-labelledby="list-mindfulness-list">
+            <h3>Mindfulness Meditation</h3>
+            <p>Join our Mindfulness Meditation retreat to discover the power of living in the present moment. Through
+              guided meditations, breathing exercises, and mindful movement, you'll learn techniques to reduce stress
+              and enhance well-being.</p>
+            <table class="table table-bordered" id="mindfulness-schedule">
+              <thead>
+                <tr style="    font-family: Platypi, serif;
+                font-style: italic;">
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Location</th>
+                  <th>Details</th>
+                  <th>Image</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Dynamic content will be inserted here -->
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="list-detox" role="tabpanel" aria-labelledby="list-detox-list">
+            <h3>Digital Detox Retreat</h3>
+            <p>The Digital Detox Retreat helps you disconnect from technology and reconnect with yourself. Enjoy nature
+              walks, meditation sessions, and workshops on managing screen time.</p>
+            <table class="table table-bordered" id="detox-schedule">
+              <thead>
+                <tr style="    font-family: Platypi, serif;
+                font-style: italic;">
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Location</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Dynamic content will be inserted here -->
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="list-holistic" role="tabpanel" aria-labelledby="list-holistic-list">
+            <h3>Holistic Wellness</h3>
+            <p>Our Holistic Wellness program covers nutrition, fitness, and mental health. Participate in yoga classes,
+              nutritional workshops, and mental wellness activities.</p>
+            <table class="table table-bordered" id="holistic-schedule">
+              <thead>
+                <tr style="    font-family: Platypi, serif;
+                font-style: italic;">
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Location</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Dynamic content will be inserted here -->
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="list-stress" role="tabpanel" aria-labelledby="list-stress-list">
+            <h3>Stress Relief Retreat</h3>
+            <p>The Stress Relief Retreat offers strategies to manage stress effectively. Engage in relaxation
+              techniques, stress management workshops, and mindfulness practices.</p>
+            <table class="table table-bordered" id="stress-schedule">
+              <thead>
+                <tr style="    font-family: Platypi, serif;
+                font-style: italic;">
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Location</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Dynamic content will be inserted here -->
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="list-growth" role="tabpanel" aria-labelledby="list-growth-list">
+            <h3>Personal Growth</h3>
+            <p>Personal Growth Retreat is designed to help you achieve your full potential. Engage in goal-setting
+              workshops, self-reflection exercises, and motivational talks.</p>
+            <table class="table table-bordered" id="growth-schedule">
+              <thead>
+                <tr style="    font-family: Platypi, serif;
+                font-style: italic;">
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Location</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Dynamic content will be inserted here -->
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="list-yoga" role="tabpanel" aria-labelledby="list-yoga-list">
+            <h3>Yoga Wellness</h3>
+            <p>Yoga Wellness Retreat focuses on enhancing physical and mental well-being through yoga. Participate in
+              various yoga styles, from Hatha to Vinyasa, suitable for all levels.</p>
+            <table class="table table-bordered" id="yoga-schedule">
+              <thead>
+                <tr style="    font-family: Platypi, serif;
+                font-style: italic;">
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Location</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Dynamic content will be inserted here -->
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="list-creative" role="tabpanel" aria-labelledby="list-creative-list">
+            <h3>Creative Expression</h3>
+            <p>Creative Expression Retreat encourages you to explore your artistic side. Join workshops on painting,
+              writing, and other creative activities.</p>
+            <table class="table table-bordered" id="creative-schedule">
+              <thead>
+                <tr style="    font-family: Platypi, serif;
+                font-style: italic;">
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Location</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Dynamic content will be inserted here -->
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="list-silent" role="tabpanel" aria-labelledby="list-silent-list">
+            <h3>Silent Retreat</h3>
+            <p>Silent Retreat offers a peaceful environment to reflect and meditate. Enjoy periods of silence, guided
+              meditations, and reflective exercises.</p>
+            <table class="table table-bordered" id="silent-schedule">
+              <thead>
+                <tr style="    font-family: Platypi, serif;
+                font-style: italic;">
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Location</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Dynamic content will be inserted here -->
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="list-seniors" role="tabpanel" aria-labelledby="list-seniors-list">
+            <h3>Wellness for Seniors</h3>
+            <p>Wellness for Seniors focuses on physical and mental health for older adults. Participate in gentle yoga,
+              tai chi, and health workshops tailored for seniors.</p>
+            <p></p>
+            <table class="table table-bordered" id="seniors-schedule">
+              <thead>
+                <tr style="    font-family: Platypi, serif;
+                font-style: italic;">
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Location</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Dynamic content will be inserted here -->
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="list-women" role="tabpanel" aria-labelledby="list-women-list">
+            <h3>Women Empowerment</h3>
+            <p>Women Empowerment Retreat provides a supportive space for women to grow. Engage in empowerment workshops,
+              networking sessions, and self-care activities.</p>
+            <table class="table table-bordered" id="women-schedule">
+              <thead>
+                <tr style="    font-family: Platypi, serif;
+                font-style: italic;">
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Location</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Dynamic content will be inserted here -->
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="list-men" role="tabpanel" aria-labelledby="list-men-list">
+            <h3>Men's Wellness</h3>
+            <p>Men's Wellness Retreat focuses on physical and mental health for men. Participate in fitness sessions,
+              mental health workshops, and bonding activities.</p>
+            <table class="table table-bordered" id="men-schedule">
+              <thead>
+                <tr style="    font-family: Platypi, serif;
+                font-style: italic;">
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Location</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Dynamic content will be inserted here -->
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="list-cleanse" role="tabpanel" aria-labelledby="list-cleanse-list">
+            <h3>Detox and Cleanse</h3>
+            <p>Detox and Cleanse Retreat helps you reset your body with healthy meals and detoxifying activities. Enjoy
+              juice cleanses, yoga, and wellness workshops.</p>
+            <table class="table table-bordered" id="cleanse-schedule">
+              <thead>
+                <tr style="    font-family: Platypi, serif;
+                font-style: italic;">
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Location</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Dynamic content will be inserted here -->
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="list-nature" role="tabpanel" aria-labelledby="list-nature-list">
+            <h3>Nature Immersion</h3>
+            <p>Nature Immersion Retreat reconnects you with nature through outdoor activities. Enjoy hiking, camping,
+              and nature-based mindfulness practices.</p>
+            <table class="table table-bordered" id="nature-schedule">
+              <thead>
+                <tr style="    font-family: Platypi, serif;
+                font-style: italic;">
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Location</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Dynamic content will be inserted here -->
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="list-workshop" role="tabpanel" aria-labelledby="list-workshop-list">
+            <h3>Digital Wellness Workshop</h3>
+            <p>Digital Wellness Workshop teaches you how to balance technology use and well-being. Participate in
+              workshops on digital mindfulness and healthy tech habits.</p>
+            <table class="table table-bordered" id="workshop-schedule">
+              <thead>
+                <tr style="    font-family: Platypi, serif;
+                font-style: italic;">
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Location</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Dynamic content will be inserted here -->
+              </tbody>
+            </table>
+          </div>
+          <div class="tab-pane fade" id="list-parents" role="tabpanel" aria-labelledby="list-parents-list">
+            <h3>Wellness for Parents</h3>
+            <p>Wellness for Parents offers strategies to manage parenting stress and enhance well-being. Join workshops
+              on parenting techniques, self-care, and family wellness</p>
+            <table class="table table-bordered" id="parents-schedule">
+              <thead>
+                <tr style="    font-family: Platypi, serif;
+                font-style: italic;">
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>Location</th>
+                  <th>Details</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Dynamic content will be inserted here -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-white">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links -->
+    <section>
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <img src="../Green Wellness Flat Illustrative Health and Fitness Platform Logo.png"
+              style="height: 50px;width: 130px; object-fit: cover;object-position: center;" class="" alt="">
+            <p>
+              Experience the ultimate rejuvenation with our diverse wellness programs tailored for everyone.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4" style="font-weight: bold;">
+              Programs
+            </h6>
+            <p class="hover-color">
+              <a href="../html files/programm.html" class="text-reset text-decoration-none">Mindfulness Meditation</a>
+            </p>
+            <p class="hover-color">
+              <a href="../html files/programm.html" class="text-reset text-decoration-none">Digital Detox</a>
+            </p>
+            <p class="hover-color">
+              <a href="../html files/programm.html" class="text-reset text-decoration-none">Yoga Wellness</a>
+            </p>
+            <p class="hover-color">
+              <a href="../html files/programm.html" class="text-reset text-decoration-none">Nature Immersion</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4" style="font-weight: bold;">
+              Useful links
+            </h6>
+            <p class="hover-color">
+              <a href="../html files/loginsignup.html" class="text-reset text-decoration-none">Reservation</a>
+            </p>
+            <p class="hover-color">
+              <a href="../html files/schedule.html" class="text-reset text-decoration-none">Schedule</a>
+            </p>
+            <p class="hover-color">
+              <a href="../html files/blog.html" class="text-reset text-decoration-none">Blog</a>
+            </p>
+            <p class="hover-color">
+              <a href="../html files/contact.html" class="text-reset text-decoration-none">Contact</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4" style="font-weight: bold;">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              <a href="mailto:info@digitalwellnessretreat.com"
+                class="text-reset text-decoration-none">info@digitalwellnessretreat.com</a>
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links -->
+
+    <!-- Copyright -->
+    <div class="text-center p-1" style="background-color: #0d6e41; color: white;">
+      © 2024 Copyright:
+      <a class="text-reset text-decoration-none fw-bold" href="https://digitalwellnessretreat.com/"
+        target="_blank">Digital Wellness Retreat</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <a href="#" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></a>
+
+
+  <!-- Bootstrap 5.3.0 Bundle JS (Including Popper.js) -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Bootstrap 5.3.0-alpha1 Bundle JS (Redundant, can be removed if the above is used) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- jQuery Slim (for Bootstrap's JS components) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+  <!-- Popper.js (for tooltips and popovers in Bootstrap) -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+
+  <!-- Bootstrap 4.5.2 JS (Redundant, can be removed if using Bootstrap 5) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Custom Schedule JavaScript -->
+  <script src="../js/schedule.js"></script>
+
+  <!-- AOS (Animate On Scroll) library JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Initialize AOS -->
+  <script>
+    AOS.init();
+  </script>
+
+  <!-------------------------- Blocking Page ------------------------------>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const authLink = document.getElementById('auth-link');
+      const logoutLink = document.getElementById('logout-link');
+      const usernameNav = document.getElementById('username-nav');
+
+      // Check if the user is logged in
+      if (localStorage.getItem('loggedIn') === 'true') {
+        authLink.classList.add('d-none'); // Hide Register/SignIn
+        logoutLink.classList.remove('d-none'); // Show Logout
+
+        const user = JSON.parse(localStorage.getItem('user'));
+        if (user && user.name) {
+          usernameNav.innerText = user.name; // Display user's name in the navbar
+        }
+      } else {
+        authLink.classList.remove('d-none'); // Show Register/SignIn
+        logoutLink.classList.add('d-none'); // Hide Logout
+        usernameNav.innerText = ''; // Clear username display
+
+        // Optional: Only redirect from specific pages if needed
+        // Uncomment the line below if you want to redirect only from restricted pages
+        // if (window.location.pathname === '/restricted-page.html') {
+        //     window.location.href = './loginsignup.html';
+        // }
+      }
+
+      // Logout functionality
+      document.getElementById('logout').addEventListener('click', function () {
+        localStorage.removeItem('loggedIn');
+        localStorage.removeItem('user');
+        // Redirect to the home page or login page after logout
+        window.location.href = './schedule.html'; // Change this to your home page
+      });
+    });
+
+    const updateNavbar = () => {
+      const loggedIn = localStorage.getItem('loggedIn');
+      const username = localStorage.getItem('username');
+
+      const usernameNav = document.getElementById('username-nav');
+      if (loggedIn === 'true' && usernameNav) {
+        usernameNav.innerText = `${username}`;
+      } else if (usernameNav) {
+        usernameNav.innerText = ``;
+      }
+    }
+
+    updateNavbar();
+
+  </script>
+
+</body>
+
+</html>

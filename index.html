@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css"> <!-- Commit: Main stylesheet for custom styles -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Commit: Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <!-- Commit: AOS (Animate On Scroll) for scroll animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <!-- Commit: Owl Carousel for image sliders -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Commit: Ionicons for additional icons -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Commit: Bootstrap CSS for responsive design -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Commit: Chart.js for data visualization -->
+  <link rel="stylesheet" href="./css/index.css"> <!-- Commit: Additional stylesheet for index-specific styles -->
+
+  <!-- Favicon for the Blog -->
+  <link rel="shortcut icon" href="Green Wellness Flat Illustrative Health and Fitness Platform Logo.png"
+    style="height: 100px;width:100px;" type="image/x-icon">
+
+  <link rel="stylesheet" href="./css/flaticon.css"> <!-- Commit: Flaticon for flat icons -->
+  <link rel="stylesheet" href="./css/animate.css"> <!-- Commit: Animate.css for CSS animations -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Commit: Duplicate Bootstrap CSS (can be removed) -->
+
+  <title> Digital Wellness Retreat</title>
+
+</head>
+
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="Green Wellness Flat Illustrative Health and Fitness Platform Logo.png"
+          style="height: 60px;width: 140px; object-fit: cover; object-position: center;" class="" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link mx-2 text-uppercase active text-dark" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 text-uppercase text-dark" href="./html files/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 text-uppercase text-dark" href="./html files/programm.html">Programs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 text-uppercase text-dark" href="./html files/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 text-uppercase text-dark" href="./html files/reservation.html">Reservation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 text-uppercase text-dark" href="./html files/schedule.html">Schedules</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 text-uppercase text-dark" href="./html files/contact.html">Contact</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item" id="auth-link">
+            <a class="nav-link text-dark" href="../html files/loginsignup.html">
+              <!-- <i class="fa fa-sign-in" aria-hidden="true"></i> -->
+              <span class="text-dark">Register/Sign In</span>
+            </a>
+          </li>
+          <li class="nav-item d-none" id="logout-link">
+            <a class="nav-link text-dark" href="#">
+              <i class="fa fa-sign-out" aria-hidden="true"></i>
+              <span id="logout" class="text-dark">Sign Out</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">
+              <i class="fa-solid fa-user" aria-hidden="true"></i>
+              <span id="username-nav"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="video-section">
+    <video autoplay muted loop id="bg-video">
+      <source src="video/6740727-hd_1920_1080_25fps.mp4" type="video/mp4">
+    </video>
+    <div class="content" data-aos="">
+      <h1 style="   font-family: Platypi, serif;
+      font-style: italic;">Welcome to Our Website</h1>
+      <p>Experience the best content with a stunning video background.</p>
+    </div>
+  </section>
+
+  <section id="introduction" class="section py-5" data-aos="fade-up">
+    <div class="container">
+      <h1 class="section-heading mb-4 text-center fw-bold  " style="   font-family: Platypi, serif;
+      font-style: italic;"> Explore Our Digital Wellness Journey</h1>
+      <p class="section-content lead" style=" margin-left: 13%; width: 78%; font-size: 18px;">
+        Experience inner peace and rejuvenation at our Digital Wellness Retreat. Discover holistic well-being
+        through mindfulness, physical wellness, and personal growth. Join us to unwind, recharge, and enhance
+        your health and clarity.</p>
+      <!-- Add more content as needed -->
+    </div>
+  </section>
+
+  <!-- <section class="ftco-section ftco-intro"> -->
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="video-container" data-aos="fade-right">
+          <video autoplay muted loop class="styled-video">
+            <source src="./Green Cream Modern Elegant Wellness Habits Mobile Video (1).mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="heading-section ftco-animate" data-aos="fade-up">
+          <h2 class="mb-4">Why You Should Go To a Retreat</h2>
+        </div>
+        <p class="ftco-animate" data-aos="fade-up">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
+          texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+        </p>
+        <ul class="mt-5 do-list">
+          <li class="ftco-animate">
+            <a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Retreat boosts brain power</a>
+          </li>
+          <li class="ftco-animate">
+            <a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Retreat helps you to breathe better</a>
+          </li>
+          <li class="ftco-animate">
+            <a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Retreat improves your strength</a>
+          </li>
+          <li class="ftco-animate">
+            <a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Retreat helps you to focus</a>
+          </li>
+          <li class="ftco-animate">
+            <a href="#"><span class="ion-ios-checkmark-circle mr-3"></span>Retreat helps give meaning to your day</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- </section> -->
+
+  <section class="ftco-section ftco-section-services bg-light">
+    <div class="container">
+      <div class="row" data-aos="fade-up">
+        <div class="col-md-3">
+          <div class="services ftco-animate">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <span><img src="img/wellness.png" alt="Wellness Icon"></span>
+            </div>
+            <div class="text mt-4">
+              <h3>Healthy Lifestyle</h3>
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+                paradisematic country</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="services ftco-animate">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <span><img src="img/positive-minds.png" alt="Balance Icon"></span>
+            </div>
+            <div class="text mt-4">
+              <h3>Body &amp; Mind Balance</h3>
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+                paradisematic country</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="services ftco-animate">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <img src="img/meditation.gif" alt="Meditation Icon">
+            </div>
+            <div class="text mt-4">
+              <h3>Meditation Practice</h3>
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+                paradisematic country</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="services ftco-animate">
+            <div class="icon d-flex justify-content-center align-items-center">
+              <span><img src="img/spa-stones (1).gif" alt="Edeology Icon"></span>
+            </div>
+            <div class="text mt-4">
+              <h3>Edeology</h3>
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a
+                paradisematic country</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="ftco-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-12 heading-section ftco-animate text-center">
+          <!-- <h3 class="subheading">Yoga Classes</h3> -->
+          <h1 class="mb-1" style="   font-family: Platypi, serif;
+      font-style: italic;" data-aos="fade-up">Choose Your Level &amp; Focus</h1>
+        </div>
+      </div>
+      <div class="row no-gutters" data-aos="fade-up">
+        <div class="col-md-6 col-lg-4">
+          <div class="package-program ftco-animate">
+            <a href="#" class="img d-flex justify-content-center align-items-center"
+              style="background-image: url(img/program-1.jpg);">
+              <div class="text p-5 text-center">
+                <h3>Group Lessons</h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="package-program ftco-animate">
+            <a href="#" class="img d-flex justify-content-center align-items-center"
+              style="background-image: url(img/program-2.jpg);">
+              <div class="text p-5 text-center">
+                <h3>retreat For Beginners</h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="package-program ftco-animate">
+            <a href="#" class="img d-flex justify-content-center align-items-center"
+              style="background-image: url(https://avatars.mds.yandex.net/i?id=209b9a613ac12f008f90b5e6849c5d22-5333580-images-thumbs&n=13);">
+              <div class="text p-5 text-center">
+                <h3>retreat For youner</h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="package-program ftco-animate">
+            <a href="#" class="img d-flex justify-content-center align-items-center"
+              style="background-image: url(https://avatars.mds.yandex.net/i?id=9bc50fd840e2805ea78ba4b96127d46cee6c2ce96bee35a8-5655052-images-thumbs&n=13);">
+              <div class="text p-5 text-center">
+                <h3>retreat For Couples</h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="package-program ftco-animate">
+            <a href="#" class="img d-flex justify-content-center align-items-center"
+              style="background-image: url('https://avatars.mds.yandex.net/i?id=507f67251f787a4d7f0e4eef531be978d433f712-10385933-images-thumbs&n=13');">
+              <div class="text p-5 text-center">
+                <h3>Retreat Bikram Yoga</h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </div>
+            </a>
+
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="package-program ftco-animate">
+            <a href="#" class="img d-flex justify-content-center align-items-center"
+              style="background-image: url(img/program-6.jpg);">
+              <div class="text p-5 text-center">
+                <h3>retreat Barre</h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+
+              </div>
+
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="activities" class="section py-5" data-aos="fade-up">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="chart-container">
+            <canvas id="activitiesChart" width="400" height="300"></canvas>
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-up">
+          <h2>Benefits</h2>
+          <p class="section-content" style="font-size: 18px;">Embark on a variety of enriching activities
+            tailored for holistic
+            wellness. Our retreat offers:</p>
+          <ul class="activity-list" style="font-size: 18px;">
+            <li>Mindfulness Meditation: Enhance focus and inner calm.</li>
+            <li>Yoga and Wellness Sessions: Improve flexibility and mental clarity.</li>
+            <li>Artistic Expression Workshops: Explore creativity through art and music.</li>
+            <li>Nature Walks and Digital Detox: Reconnect with nature and unplug from technology.</li>
+            <li>Personal Growth Workshops: Foster self-improvement and resilience.</li>
+            <li>Nutrition and Healthy Eating: Learn about balanced diets and healthy cooking.</li>
+
+            <li>Stress Management Techniques: Discover methods to manage and reduce stress.</li>
+
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <main id="key" data-aos="fade-up">
+    <div class="text">
+      <h1 class="fw-bold" style="margin-top: 50px;">Wellness Retreats for Everyone</h1><br>
+      <p style="font-size: 20px;">
+        "Experience transformative wellness retreats tailored for parents, men, women, and digital detox
+        seekers. Discover serenity through meditation for profound rejuvenation."
+      </p>
+    </div>
+  </main>
+
+
+  <section class="articles" style="margin-top: 50px;" data-aos="fade-up">
+    <article>
+      <div class="article-wrapper">
+        <figure>
+          <img src="img/md1.png" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>Mediation Retreat</h2>
+          <p>
+            A "Meditation Retreat" typically refers to a focused period of time spent in a tranquil setting, where
+            individuals engage in practices such as mindfulness, meditation, and reflection to cultivate inner peace and
+            spiritual growth.
+          </p>
+          <a href="./html files/programm.html" class="read-more">
+            Read more <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article>
+
+      <div class="article-wrapper">
+        <figure>
+          <img src="img/de2.png" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>Digital Detox Retreat</h2>
+          <p>
+            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum
+            eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+          </p>
+          <a href="./html files/programm.html" class="read-more">
+            Read more <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article>
+
+      <div class="article-wrapper">
+        <figure>
+          <img src="img/ho3.jpg" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>Holistic Wellness Retreat</h2>
+          <p>
+            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum
+            eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+          </p>
+          <a href="./html files/programm.html" class="read-more">
+            Read more <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <div class="counter-container" data-aos="fade-up">
+    <div class="counter">
+      <h2>Happy Customers</h2>
+      <span id="happy-customers" class="count">99%</span>
+    </div>
+    <div class="counter">
+      <h2>Lessons Conducted</h2>
+      <span id="lessons-conducted" class="count">80</span>
+    </div>
+    <div class="counter">
+      <h2>Years of Experience</h2>
+      <span id="years-experience" class="count">40</span>
+    </div>
+    <div class="counter">
+      <h2>Retreat Workshops</h2>
+      <span id="retreat-workshop" class="count">70</span>
+    </div>
+  </div>
+
+  <!-- Discount Start -->
+  <div class="discount wow zoomIn" data-wow-delay="0.1s" data-aos="fade-up">
+    <div class="container">
+      <div class="section-header text-center">
+
+        <h2>Get <span>30%</span> Discount for all Retreats</h2>
+      </div>
+      <div class="container discount-text text-center"> <!-- Added text-center class -->
+        <p>
+          Take advantage of our special offer and enjoy a 30% discount on all retreat packages! Whether you’re looking
+          to
+          relax and rejuvenate or participate in transformative workshops, our retreats offer the perfect escape. Book
+          now
+          to secure your spot and make the most of this exclusive discount. Our retreats are designed to provide a
+          holistic
+          experience, combining relaxation, education, and personal growth in a beautiful setting.
+        </p>
+      </div>
+
+
+    </div>
+  </div>
+  </div>
+  <!-- pricing cards -->
+  <!-- our pricing -->
+  <div id="pricing" class="pricing">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="title mb-5 mt-5" data-aos="fade-up">
+            <h2 class="mb-5">Our<strong style="color: black;"> Pricing</strong></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5" data-aos="fade-up">
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+          <div class="pricing_box">
+            <h3>Basic</h3>
+            <span>$<strong class="white_bold">40</strong></span>
+            <p>It is a long established fact that a reader will be distracted by the readable</p>
+            <a class="SelectPlan" href="#">Select Plan</a>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+          <div class="pricing_box_cross">
+            <h3>Standard</h3>
+            <span>$<strong class="white_bold">50</strong></span>
+            <p>It is a long established fact that a reader will be distracted by the readable</p>
+            <a class="SelectPlan" href="#">Select Plan</a>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+          <div class="pricing_box">
+            <h3>Premium</h3>
+            <span>$<strong class="white_bold">60</strong></span>
+            <p>It is a long established fact that a reader will be distracted by the readable</p>
+            <a class="SelectPlan" href="#">Select Plan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- end our pricing -->
+  <section class="ftco-gallery ftco-section bg-light" data-aos="fade-up">
+    <div class="container">
+      <div class="row justify-content-center mb-2 pb-3">
+        <div class="col-md-7 heading-section ftco-animate text-center">
+          <h3 class="subheading">Experience the Serenity</h3>
+          <h2 class="">Explore Our Recent Retreat Moments</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container2" data-aos="fade-up">
+    <div class="gallery container-fluid" data-aos="fade-up" data-aos-delay="500">
+      <div class="gallery-item">
+        <img
+          src="https://avatars.mds.yandex.net/i?id=2273fb253c2b030552ba617d13cc7427f05382b2-8709977-images-thumbs&n=13"
+          alt="Image 1">
+        <div class="overlay">
+          <a href="./html files/gallery.html" class="more-btn">More Info</a>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img
+          src="https://avatars.mds.yandex.net/i?id=30dfafd3d52bb41059e31e36cd610448bf1213cd-12421862-images-thumbs&n=13"
+          alt="Image 2">
+        <div class="overlay">
+          <a href="./html files/gallery.html" class="more-btn">More Info</a>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img
+          src="https://avatars.mds.yandex.net/i?id=432209316e53fff27b991025319528c17199370a-7753204-images-thumbs&n=13"
+          alt="Image 3">
+        <div class="overlay">
+          <a href="./html files/gallery.html" class="more-btn">More Info</a>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img
+          src="https://avatars.mds.yandex.net/i?id=432209316e53fff27b991025319528c17199370a-7753204-images-thumbs&n=13"
+          alt="Image 4">
+        <div class="overlay">
+          <a href="./html files/gallery.html" class="more-btn">More Info</a>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img
+          src="https://avatars.mds.yandex.net/i?id=b6c050b72b01cd69f8de8f50921cf4060b0e348b-9151370-images-thumbs&n=13"
+          alt="Image 5">
+        <div class="overlay">
+          <a href="./html files/gallery.html" class="more-btn">More Info</a>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="https://avatars.mds.yandex.net/i?id=88a60c2b636c47564dca9153212aaf28-5710085-images-thumbs&n=13"
+          alt="Image 6">
+        <div class="overlay">
+          <a href="./html files/gallery.html" class="more-btn">More Info</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section>
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+
+            <img src="Green Wellness Flat Illustrative Health and Fitness Platform Logo.png"
+              style="height: 50px;width: 130px; object-fit: cover;object-position: center;" class="" alt="">
+
+
+            <p>
+              Experience the ultimate rejuvenation with our diverse wellness programs tailored for everyone.
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Programs
+            </h6>
+            <p class="hover-color">
+              <a href="./html files/programm.html" class="text-reset text-decoration-none">Mindfulness Meditation</a>
+            </p>
+            <p class="hover-color">
+              <a href="./html files/programm.html" class="text-reset text-decoration-none">Digital Detox</a>
+            </p>
+            <p class="hover-color">
+              <a href="./html files/programm.html" class="text-reset text-decoration-none">Yoga Wellness</a>
+            </p>
+            <p class="hover-color">
+              <a href="./html files/programm.html" class="text-reset text-decoration-none">Nature Immersion</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p class="hover-color">
+              <a href="./html files/loginsignup.html" class="text-reset text-decoration-none">Reservation</a>
+            </p>
+            <p class="hover-color">
+              <a href="./html files/schedule.html" class="text-reset text-decoration-none">Schedule</a>
+            </p>
+            <p class="hover-color;">
+              <a href="./html files/blog.html" class="text-reset text-decoration-none">Blog</a>
+            </p>
+            <p class="hover-color">
+              <a href="./html files/contact.html" class="text-reset text-decoration-none">Contact</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              <a href="mailto:info@digitalwellnessretreat.com" class="text-reset text-decoration-none"
+                target="_blank">info@digitalwellnessretreat.com</a>
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-1" style="background-color: #0d6e41; color: white;">
+      © 2024 Copyright:
+      <a class="text-reset text-decoration-none fw-bold" href="https://digitalwellnessretreat.com/"
+        target="_blank">Digital Wellness Retreat</a>
+
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <a href="#" class="back-to-top"><i class="fa-solid fa-arrow-up"></i></span>
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- Commit: AOS JavaScript for initializing scroll animations -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz4fnFO9gybBogGzeyUzqLa24cF3Cd2Z8I5pVvohXp1k00+G2QcxQq05FO"
+    crossorigin="anonymous"></script> <!-- Commit: Popper.js for tooltip and popover positioning -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <!-- Commit: Bootstrap Bundle JS (includes Popper.js) for Bootstrap functionality -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Commit: Duplicate Bootstrap Bundle JS (can be removed) -->
+  <script src="./js/app.js"></script> <!-- Commit: Custom JavaScript for application-specific functionality -->
+
+  <script>
+    AOS.init();
+  </script>
+
+  <!-------------------------- Blocking Page ------------------------------>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const authLink = document.getElementById('auth-link');
+      const logoutLink = document.getElementById('logout-link');
+      const usernameNav = document.getElementById('username-nav');
+
+      // Check if the user is logged in
+      if (localStorage.getItem('loggedIn') === 'true') {
+        authLink.classList.add('d-none'); // Hide Register/SignIn
+        logoutLink.classList.remove('d-none'); // Show Logout
+
+        const user = JSON.parse(localStorage.getItem('user'));
+        if (user && user.name) {
+          usernameNav.innerText = user.name; // Display user's name in the navbar
+        }
+      } else {
+        authLink.classList.remove('d-none'); // Show Register/SignIn
+        logoutLink.classList.add('d-none'); // Hide Logout
+        usernameNav.innerText = ''; // Clear username display
+
+      }
+
+      // Logout functionality
+      document.getElementById('logout').addEventListener('click', function () {
+        localStorage.removeItem('loggedIn');
+        localStorage.removeItem('user');
+        // Redirect to the home page or login page after logout
+        window.location.href = './index.html'; // Change this to your home page
+      });
+    });
+
+    const updateNavbar = () => {
+      const loggedIn = localStorage.getItem('loggedIn');
+      const username = localStorage.getItem('username');
+
+      const usernameNav = document.getElementById('username-nav');
+      if (loggedIn === 'true' && usernameNav) {
+        usernameNav.innerText = `${username}`;
+      } else if (usernameNav) {
+        usernameNav.innerText = ``;
+      }
+    }
+
+    updateNavbar();
+
+  </script>
+
+</body>
+
+</html>

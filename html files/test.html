@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand img {
+            height: 100px;
+            width: 140px;
+        }
+
+        .hero-wrap {
+            position: relative;
+            background-image: url('https://via.placeholder.com/1600x400');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-wrap .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-wrap .container1 {
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-form {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .contact-form:hover {
+            transform: scale(1.02);
+        }
+
+        .contact-form .form-control {
+            border-radius: 0.5rem;
+            border: 1px solid #ced4da;
+            margin-bottom: 15px;
+            transition: border-color 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form .form-control:focus {
+            border-color: #28a745;
+            box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+        }
+
+        .contact-form .btn {
+            background-color: #28a745;
+            border: none;
+            color: #fff;
+            border-radius: 0.5rem;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form .btn:hover {
+            background-color: #218838;
+        }
+
+        .contact-info {
+            padding: 30px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .contact-info:hover {
+            transform: scale(1.02);
+        }
+
+        .contact-info h3 {
+            margin-bottom: 20px;
+        }
+
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-info ul li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-info ul li i {
+            margin-right: 10px;
+            color: #28a745;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: #333;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #28a745;
+        }
+
+        .section {
+            padding: 30px 0;
+        }
+
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .accordion-title {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .accordion-item {
+            margin-bottom: 10px;
+        }
+
+        .accordion-header {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-radius: 0.5rem;
+            background: #f1f1f1;
+        }
+
+        .accordion-header:hover {
+            background: #e2e2e2;
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 10px;
+            border-radius: 0.5rem;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .accordion-content.show {
+            display: block;
+        }
+
+        .accordion-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-icon.rotate {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/Green Wellness Flat Illustrative Health and Fitness Platform Logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase active text-dark" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase text-dark" href="#" target="_blank">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase text-dark" href="./programm.html">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase text-dark" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase text-dark" href="./reservation.html">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase text-dark" href="./schedule.html">Schedules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-uppercase text-dark" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-dark" href="./signuplogin.html">
+                            <i class="fas fa-user-circle me-1"></i>Register/SignIn
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-wrap">
+        <div class="overlay"></div>
+        <div class="container1">
+            <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+                <div class="col-md-9 text-center">
+                    <h1 class="mb-3 bread">Contact Us</h1>
+                    <p class="breadcrumbs"><span class="mr-2"><a href="../index.html">Home</a></span><span>Contact</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="contact-form">
+                    <h3>Get In Touch</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" class="form-control" placeholder="Message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out to us anytime. We are here to help!</p>
+                    <ul class="list-unstyled">
+                        <li><i class="ri-map-pin-line"></i> 92 Cherry Drive, Uniondale, NY 11553</li>
+                        <li><i class="ri-mail-line"></i> <a href="mailto:lorem@ipsum.com">lorem@ipsum.com</a></li>
+                        <li><i class="ri-phone-line"></i> 123-456-789</li>
+                    </ul>
+                    <div class="social-media">
+                        <p>Connect with us:</p>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section pt-5 pb-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <i class="ri-map-pin-line display-4"></i>
+                            <h5 class="card-title mt-3">Visit Us</h5>
+                            <p class="card-text">123 Main Street, Anytown, CA 12345 USA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <i class="ri-phone-line display-4"></i>
+                            <h5 class="card-title mt-3">Call Us</h5>
+                            <p class="card-text">Phone: +1 234 567 890</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <i class="ri-mail-line display-4"></i>
+                            <h5 class="card-title mt-3">Email Us</h5>
+                            <p class="card-text">info@yourwebsite.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container mt-5">
+        <h1 class="accordion-title">Frequently Asked Questions</h1>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h2 class="accordion-question">What is a digital wellness retreat?</h2>
+                    <span class="accordion-icon"><i class="ri-add-line"></i></span>
+                </div>
+                <div class="accordion-content">
+                    <p>A digital wellness retreat is a program designed to help individuals disconnect from digital devices and focus on mental, physical, and emotional well-being through various activities and therapies.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h2 class="accordion-question">How can I book a session?</h2>
+                    <span class="accordion-icon"><i class="ri-add-line"></i></span>
+                </div>
+                <div class="accordion-content">
+                    <p>You can book a session through our website by visiting the reservation page or by contacting our support team directly via email or phone.</p>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <h2 class="accordion-question">What services do you offer?</h2>
+                    <span class="accordion-icon"><i class="ri-add-line"></i></span>
+                </div>
+                <div class="accordion-content">
+                    <p>We offer a variety of services including yoga sessions, meditation classes, personalized wellness plans, and nutritional guidance to enhance your overall well-being.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+F76iP0eyV+6LM3f4H5ORozY1N6c7" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        // Contact Form Submission with SweetAlert
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            Swal.fire({
+                title: 'Success!',
+                text: 'Your message has been sent successfully.',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            });
+            // Clear form
+            this.reset();
+        });
+
+        const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const message = document.getElementById('message').value.trim();
+
+            if (name && email && phone && message) {
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Your message has been sent.',
+                    icon: 'success',
+                    confirmButtonText: 'OK'
+                });
+        // Accordion
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', function () {
+                const icon = this.querySelector('.accordion-icon');
+                const content = this.nextElementSibling;
+
+                icon.classList.toggle('rotate');
+                content.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+<div class="container2">
+    <div class="gallery container-fluid">
+      <div class="gallery-item" data-aos="fade-up">
+        <img src="https://avatars.mds.yandex.net/i?id=2273fb253c2b030552ba617d13cc7427f05382b2-8709977-images-thumbs&n=13" alt="Image 1">
+        <div class="overlay">
+          <a href="./html files/gallery.html" class="more-btn">More Info</a>
+        </div>
+      </div>
+      <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://avatars.mds.yandex.net/i?id=30dfafd3d52bb41059e31e36cd610448bf1213cd-12421862-images-thumbs&n=13" alt="Image 2">
+        <div class="overlay">
+          <a href="./html files/gallery.html" class="more-btn">More Info</a>
+        </div>
+      </div>
+      <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://avatars.mds.yandex.net/i?id=432209316e53fff27b991025319528c17199370a-7753204-images-thumbs&n=13" alt="Image 3">
+        <div class="overlay">
+          <a href="./html files/gallery.html" class="more-btn">More Info</a>
+        </div>
+      </div>
+      <div class="gallery-item" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://avatars.mds.yandex.net/i?id=432209316e53fff27b991025319528c17199370a-7753204-images-thumbs&n=13" alt="Image 4">
+        <div class="overlay">
+          <a href="./html files/gallery.html" class="more-btn">More Info</a>
+        </div>
+      </div>
+      <div class="gallery-item" data-aos="fade-up" data-aos-delay="400">
+        <img src="https://avatars.mds.yandex.net/i?id=b6c050b72b01cd69f8de8f50921cf4060b0e348b-9151370-images-thumbs&n=13" alt="Image 5">
+        <div class="overlay">
+          <a href="./html files/gallery.html" class="more-btn">More Info</a>
+        </div>
+      </div>
+      <div class="gallery-item" data-aos="fade-up" data-aos-delay="500">
+        <img src="https://avatars.mds.yandex.net/i?id=88a60c2b636c47564dca9153212aaf28-5710085-images-thumbs&n=13" alt="Image 6">
+        <div class="overlay">
+          <a href="./html files/gallery.html" class="more-btn">More Info</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
